@@ -1,0 +1,149 @@
+ 			  	■ Python
+
+IDLE: Entorno integrado de programación que se instala automáticamente cuando instalas Python
+
+¿Qué puede hacer IDLE?
+Escribir, Editar, Ejecutar.
+
+METODOS DE LAS CADENAS DE CARACTERES:
+
+• Capitalize Retorna una copia de la cadena con el primer carácter en mayúsculas y el resto de minúsculas.
+cadena.capitalize().
+
+Permiten encontrar caracteres o cadenas dentro de otra:
+• Find
+• index
+
+Retorna true o false:
+Si solo contiene caracteres alfaNumericos:
+• isalnum
+
+Si solo contiene caracteres alfabéticos:
+• isalpha
+
+Si solo contiene caracteres decimales:
+• isdecimal
+
+Si solo contiene dígitos:
+• isdigit
+
+Si solo contiene caracteres en minúsculas:
+• islower
+
+Si solo contiene caracteres en mayúsculas:
+• isupper
+
+Retorna una copia en minúsculas de la cadena de caracteres.
+• lower
+
+Retorna una copia en mayúsculas de la cadena de caracteres.
+• upper
+
+OPERADORES ARITMETICOS:
+• =
+• -=
+• /=
+• //=
+• +=
+• *=
+• **=
+• %=
+
+								LISTAS:
+['a', 'b', 'c'...]
+[1, 2, 3...]
+
+✅ Sintaxis básica:
+mi_lista = [10, "hola", True, 3.14]
+
+🔧 Operaciones comunes con listas:
+1. Acceder a elementos:
+print(mi_lista[0])  |  # 10
+print(mi_lista[-1]) |  # 3.14 (último elemento)
+
+2. Modificar un valor:
+mi_lista[1] = "mundo"
+
+3. Agregar elementos:
+mi_lista.append("nuevo")     |  # Al final
+mi_lista.insert(1, "medio")  |  # En índice específico
+
+4. Eliminar elementos:
+mi_lista.remove("mundo") | # Por valor
+mi_lista.pop()           | # Último
+mi_lista.pop(0)          | # Por índice
+del mi_lista[2]          | # También por índice
+
+5. Longitud de una lista:
+len(mi_lista)
+
+6. Recorrer con un bucle:
+for item in mi_lista:
+    print(item)
+
+7. Verificar si un valor está:
+"hola" in mi_lista | # True o False
+
+🧠 Otras funciones útiles:
+Método		    Descripción
+lista.sort()	|   Ordena (modifica la lista).
+sorted(lista)	|   Ordena (sin modificar la original).
+lista.reverse()	|   Invierte el orden.
+lista.copy()	|   Copia la lista.
+lista.clear()	|   Borra todos los elementos.
+lista.count(x)	|   Cuenta cuántas veces aparece x.
+lista.index(x)	|   Devuelve el índice de x.
+lista.extend(otra_lista)  |  Extender la lista agregándole los elementos de otra lista.
+
+							TUPLA
+Estructura de datos inmutable que contiene una secuencia ordenada de elementos.
+Se pueden acceder con subíndices.
+
+CARACTERISTICAS:
+secuencia ordenada de valores.
+Puede contener valores de cualquier tipo de datos.
+puede contener valores de distintos tipos de datos.
+Cada posición de la tupla se identifica con un entero denominado 'indice'.
+Es inmutable. No puede ser modificada.
+
+							Archivos
+Modos de apertura de Archivos:
+• r (read - leer)
+• w (write - escribir)
+• a (append - añadir)
+• Agregar un + incluye leer. por ejemplo: w+ es leer y escribir.
+
+# Leer el archivo.
+  with open('nombre_archivo.text', 'r') as archivo: 
+    for linea in archivo:
+      print('=== Frase ===')
+      print(linea)
+      
+  # Escribir en el archivo.
+  with open('nombre_archivo.txt', 'w') as archivos: print
+
+
+
+
+
+
+
+
+
+
+menor = 2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

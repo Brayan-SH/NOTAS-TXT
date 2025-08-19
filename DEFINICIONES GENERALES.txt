@@ -1,0 +1,32 @@
+						■ DEFINICIONES GENERALES:
+
+PARAMETROS VS ARGUMENTOS
+LOS PARAMETROS : son los nombres que aparecen en la definición de una función. Por su parte, 
+LOS ARGUMENTOS : son los valores que le pasamos (y que, por tanto, recibe) una función.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+✅ Tipos de convenciones más comunes:
+1. Convenciones de nombres (Naming conventions)
+Se usan para nombrar variables, funciones, clases, archivos, etc.
+
+Estilo		Ejemplo		Uso común
+snake_case	mi_variable	Python, bases de datos
+camelCase	miVariable	JavaScript, Java
+PascalCase	MiClase		Clases en C#, Java, Python
+kebab-case	mi-variable	URLs, nombres de archivos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

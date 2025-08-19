@@ -1,0 +1,576 @@
+ 						Git y GitHub
+
+_________________________________________________________________________________________________
+
+ 	.: ■ Git :.
+■ COMANDOS GIT
+■ 3 AREAS EN GIT
+■ Commits (Comprometerse) = Comfirmar cambios
+■ CONFIGURAR UN EDITOR DE TEXTO PARA ESCRIBIR LOS MENSAJES DE COMMITS
+■ ASOCIAR EDITORES DE TEXTO A GITHUB
+■ MODIFICAR EL ULTIMO COMMIT
+■ DESHACER EL ULTIMO COMMIT
+■ RAMAS EN GIT Y LAS RAMA MAIN
+■ GIT LOG VER LAS RAMAS
+■ FUSIONAR RAMAS
+■ CONFLICTOS AL FUSIONAR RAMAS
+ 	.: ■ GitHub :.
+■ PROBAR CONECCION CON GITHUB
+■ SIGNIFICADO DE LAS LETRAS U, M, A, D
+■ COMANDOS PARA REPOSITORIOS REMOTOS
+■ Enviar cambios a GitHub
+■ Actualizar repositorio local cambios con pull
+■ git pull vs git fetch
+■ Bifurcar(fork) un repositorio.
+■ Abrir el Editor por defecto en Git Bash.
+■ ENVIAR UN REPOSITORIO LOCAL A GitHub.
+■ Pull Request (Solicitud de extracción)
+■ pull request a partir de una rama
+■ COMANDOS GITHUB
+■ TOKEN
+
+_________________________________________________________________________________________________
+
+ 					     	■ Git
+COMANDOS :
+→ ls __________________________ Listar los Archivos y Carpetas en el directorio actual.
+
+→ mkdir _______________________ (abreviatura de make directory(hacer directorio)) Se usa para crear nuevas carpetas o directorios desde la línea de comandos.
+
+→ rm --cached <file> __________ Para deshacer la copia de seguridad.
+
+→ rmdir _______ 👉 Sólo elimina directorios vacíos.
+
+→ rm -r nombre_directorio _____ 🛠️ Para eliminar un directorio con contenido en Git Bash.
+
+→ rm -ri nombre_directorio ____ O con confirmación interactiva.
+
+→ rm -rf nombre_directorio ____ Y si quieres eliminar sin confirmación y de forma forzada (⚠️ peligro).
+
+→ ❌ Si el directorio NO está vacío, verás este error:
+rmdir: failed to remove 'xxx': Directory not empty
+
+→ cd __________________________ (abreviatura de change directory) Se usa para moverte entre carpetas (directorios) en la línea de comandos, como Git Bash.
+
+→ "" __________________________ Se usan para encerrar texto que contiene espacios o caracteres especiales. Esto es igual que en muchas Otras terminales tipo Unix (Linux, macOS).
+
+→ cd .. _______________________ En el sistema de carpetas (moverte al directorio padre del actual).
+
+********************************************************************************************************************************************************************
+
+ 						■ COMANDOS GIT
+
+
+ 	• PARA CONFIGURAR EL USUARIO :
+→ git config --global(sin el --global para un repositorio en especifico) user.name "name"
+
+ 	• CONFIRMAR EL NOMBRE DEL USUARIO :
+→ git config user.name
+
+ 	• INICIALIZAR UN REPOSITORIO :
+→ git init
+
+ 	• CAMBIAR EL NOMBRE DE LA RAMA POR DEFECTO : hay que eliminar la carpeta .git para finalizar el proceso.
+ .defaultBranch = .rama por defecto
+→ git config --global init.defaultBranch main
+
+ 	• PARA VER EL ESTADO DEL REPOSITORIO :
+→ git status : se usa para verificar el estado actual del repositorio Git. Muestra información sobre los archivos en los que estás trabajando y
+cómo se relacionan con tu repositorio local.
+
+ 	• AGREGAR ARCHIVOS AL AREA DE PREPARACION :
+→ git add. : Se usa para agregar archivos al área de preparación (staging area) en Git.
+Esto significa que estás marcando los cambios que deseas incluir en tu próximo commit.
+
+********************************************************************************************************************************************************************
+
+ 					■ 3 AREAS EN GIT
+
+♦ 3 AREAS Y ESTADOS EN LAS QUE PUEDE ESTAR UN ARCHIVO CUANDO CREO UN REPOSITORIO DE GIT
+Cada una de esas áreas van a representar un estado distinto del archivo en el repositorio.
+
+♦ 1. Directorio de trabajo (Etapa Modificada(Modified)).
+♦ 2. Área de preparación (Etapa Preparada(Staged)).
+♦ 3. Repositorio (Etapa Confirmada(Committed)).
+
+♦ 1. Directorio de trabajo (Working directory) :
+La carpeta del proyecto que contiene todos los archivos y el directorio oculto .git del repositorio.
+
+♦ 2. Area de preparación (Staging area) : Conjunto de archivos y cambios que seran incluidos en el proximo commit.
+
+♦ 3. Repositorio(directorio .git) : Directorio que contiene los metadatos y las versiones del proyecto.
+Es la parte del repositorio que se copia cuando clonas un repositorio a la computadora.
+
+---
+
+♦ Etapa Modificada(Modified) : Si la version del archivo contiene cambios que no son parte del repositorio
+y no se ha añadido del area de preparacion.
+
+♦ (Etapa Preparada(Staged) : Si la version del archivo contiene cambios que no son parte del repositorio pero fue añadida al area de preparacion.
+
+♦ (Etapa Confirmada(Committed) : Si la version del archivo ya se encuentra en el directorio oculto .Git .
+
+Cuando abro el directorio que cree en git bash en vscode, creo un archivo.txt y le aparece una U al archivo
+es porque no estoy rastreando o llevando un registro de los cambios que se van hacer en el archivo.
+En ese momento el archivo solo esta en el area de trabajo.
+
+********************************************************************************************************************************************************************
+
+ 					■ Commits (Comprometerse) = Comfirmar cambios
+
+Componente básico de la linea del tiempo de un proyecto de Git.
+
+Es como un registro o "foto" del estado de un proyecto en un momento especifico.
+
+Registran los cambios que se realizaron en los archivos en comparación con la versión anterior que se había registrado en el repositorio.
+
+♦ Cada commit tiene un identificador unico
+Git le asigna a cada commit un identificador unico llamado SHA(Secure Hash Algorithm = Algoritmo de hash seguro) o hash.
+
+ 	♦ SHA(Secure Hash Algorithm = Algoritmo de hash seguro) identifica :
+• Los cambios realizados.
+• Donde se realizaron los cambios.
+• Quien hizo los cambios.
+
+ 	• AGREGAR UN COMMIT AL REPOSITORIO :
+→ -m = que voy a escribir un mensaje directamente en la linea de comandos.
+git commit -m " mensaje "
+
+ 	• VER EL HISTORIAL DE COMMITS
+→ git log
+
+ 	• ATAJO PARA AGREGAR TODOS LOS CAMBIOS
+→ git add .
+
+ 	• AGREGAR LOS CAMBIOS(commits) DESDE EL EDITOR DE TEXTO VSCODE si el vscode esta configurado correctamente como el editor asociado a Git
+Hacer el cambio en vscode y luego cerrar la pestaña para finalizar el commit.
+→ git commit
+
+
+
+********************************************************************************************************************************************************************
+
+ 						■ CONFIGURAR UN EDITOR DE TEXTO PARA ESCRIBIR LOS MENSAJES DE COMMITS
+
+Si ya no tengo vscode u otro editor de código asociado o si hay uno asociado que ya no quiero usar.
+
+
+ 						■ ASOCIAR EDITORES DE TEXTO A GITHUB
+
+ 	♦ Visual Studio Code
+Instala Visual Studio Code.
+Abre la terminal o Git Bash.
+Ejecuta el siguiente comando:
+
+• core = núcleo
+• el --wait permite que la linea de comandos espere que termine de escribir el mensaje del commit lo guarde en el archivo y luego lo cierre
+antes de continuar con el proceso.
+
+→ git config --global core.editor "code --wait"
+
+
+ 	♦ Sublime Text
+Instala Sublime Text.
+Abre la terminal o Git Bash.
+Ejecuta el siguiente comando:
+
+→ git config --global core.editor "subl -n -w"
+
+ 	♦ Notepad++
+Instala Notepad++.
+Abre la terminal o Git Bash.
+Ejecuta el siguiente comando:
+
+→ git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+
+********************************************************************************************************************************************************************
+
+ 		 				■ MODIFICAR EL ULTIMO COMMIT
+
+Se abre el editor para actualizar el mensaje del ultimo commit al cerrarlo se actualiza en la terminal bash
+→ git commit --amend
+
+
+********************************************************************************************************************************************************************
+
+ 		 				■ DESHACER EL ULTIMO COMMIT
+ 
+ 
+--soft = para que no se elimine el contenido del directorio del trabajo.
+HEAD = para referirme al ultimo commit que hice en la rama(main/master) actual.
+~1 = indicar que quiero retroceder un commit en el historial.
+
+► Reiniciar el historial de los commits :
+→ git reset --soft HEAD~1
+
+--hard = para no mantener los cambios de ese commit.
+→ git reset --hard HEAD~1
+
+********************************************************************************************************************************************************************
+
+ 		 				■ RAMAS EN GIT Y LAS RAMA MAIN
+ 	► RAMA(Branch) :
+Una rama en Git es una linea independiente de desarrollo en el repositorio.
+ 	► RAMAS EN GIT :
+En Git, una rama (o branch) es una línea de desarrollo independiente. Permite que trabajes en nuevas funcionalidades, arreglos o experimentos sin afectar la rama principal (main o master).
+
+🛠️ Comandos básicos para trabajar con ramas
+📌 1. Ver ramas existentes
+ 	→ git branch
+
+🌱 2. Crear una nueva rama
+ 	→ git branch nombre-rama
+
+ 	Ejemplo:
+ 	→ git branch nueva-funcionalidad
+
+🔀 3. Cambiarse a una rama
+ 	→ git checkout nombre-rama
+
+ 	O en una sola línea :
+ 	→ git checkout -b nombre-rama
+
+Crea la rama y se cambia a ella directamente.
+
+🌲 4. Ver ramas remotas
+ 	→ git branch -r
+
+📤 5. Subir una nueva rama al repositorio remoto
+ 	→ git push -u origin nombre-rama
+
+🔀 6. Fusionar una rama a otra (ej. a main)
+ 	1. Cambiar a la rama destino :
+ 	→ git checkout main
+
+ 	2. Fusionar :
+ 	→ git merge nombre-rama
+
+🗑️ 7. Eliminar una rama
+ 	• Local :
+ 	→ git branch -d nombre-rama
+
+ 	• Remota :
+ 	→ git push origin --delete nombre-rama
+
+🔀 8 . Cambiar el nombre de una rama
+ 	→ git branch -m nueva-rama
+ 
+ 	♦ Otra forma :
+ 	→ git branch -m rama-actual rama-actualizada
+
+✅ Buenas prácticas con ramas
+ 	• Usa nombres descriptivos: fix-login, feature/perfil, hotfix-crash-app
+
+ 	• Trabaja en ramas pequeñas y específicas
+
+ 	• Fusiona a main solo cuando todo esté probado
+
+
+********************************************************************************************************************************************************************
+
+ 		 				■ GIT LOG VER LAS RAMAS
+
+Una forma de ver los commits :
+→ git log --oneline
+
+
+********************************************************************************************************************************************************************
+
+ 		 				■ FUSIONAR RAMAS
+• Proceso que permite combinar varias líneas independientes de desarrollo en una sola rama.
+
+• Para fusionar dos ramas, debes estar en la rama que recibirá la fusión.
+
+
+********************************************************************************************************************************************************************
+
+ 		 				■ CONFLICTOS AL FUSIONAR RAMAS
+
+Cuando haces un merge de ramas en Git (por ejemplo, git merge rama1), a veces ocurren conflictos si Git no puede decidir automáticamente cómo combinar los cambios. Estos se llaman conflictos de fusión (merge conflicts).
+
+⚠️ ¿Cuándo ocurren conflictos?
+► Cuando dos ramas modifican las mismas líneas del mismo archivo, o cuando un archivo se modifica en una rama y se elimina en otra.
+
+🧪 Ejemplo típico:
+Supón que tienes dos ramas:
+main: contiene un archivo hola.txt con "Hola mundo"
+
+► ramaA: cambia esa línea a "Hola planeta"
+
+► ramaB: cambia esa misma línea a "Hola universo"
+
+Si intentas fusionar ►ramaB en ►ramaA o viceversa, Git no sabe cuál usar → conflicto.
+
+ 	♦ Cuando tratan de combinar archivos que tienen cambios que están en conflicto, es decir cuando modifican la misma linea, el mismo texto o elemento.
+• Git lo considera como cambios incompatibles.
+• Cuando el estado de main cambie a (main|MERGING) .
+• Y los cambios esten listos para agregarlos al commit. Continuar el proceso con el comando :
+ 	→ git merge --continue
+
+
+____________________________________________________________________________________________________________________________________________________________________
+
+ 					     	.: ■ GitHub :.
+
+Es un servicio de Hosting que nos permite almacenar proyectos de desarrollo de software y control de versiones usando Git.
+
+
+********************************************************************************************************************************************************************
+ 						■ PROBAR CONECCION CON GITHUB
+
+► Para probar tu conexión a tu repositorio de GitHub desde Git Bash, lo más común es usar SSH o HTTPS, dependiendo de cómo lo configuraste.
+
+• Te explico ambos casos:
+ 	🔹 1. Si usas SSH
+► Esto es lo más seguro y práctico, porque no tienes que escribir tu usuario y contraseña cada vez.
+  ♦ Paso 1 — Verificar que tienes una clave SSH configurada:
+ 
+  → ls -al ~/.ssh
+  Deberías ver algo como id_rsa y id_rsa.pub.
+
+  ♦ Paso 2 — Probar la conexión a GitHub:
+  → ssh -T git@github.com
+
+  Si todo está bien, verás algo como:
+  • Hi tu-usuario! You've successfully authenticated, but GitHub does not provide shell access.
+
+ 	🔹 2. Si usas HTTPS
+En este caso no hay un comando directo de prueba como SSH, pero puedes comprobarlo con:
+
+  → git ls-remote https://github.com/usuario/repositorio.git
+  ► Si funciona, te listará las referencias del repositorio (branches, tags).
+ 
+  💡 Nota
+   ► Si no tienes configurado SSH, GitHub te pedirá usuario y token si usas HTTPS.
+
+  Puedes ver y cambiar la URL de tu repositorio con:
+
+  git remote -v
+ 
+
+********************************************************************************************************************************************************************
+
+ 				■ NOTA
+
+► En la rama principal
+Tu rama lleva una confirmación por delante de 'origin/main'.
+(Usa "git push" para publicar tus confirmaciones locales).
+
+► Cambios no preparados para la confirmación:
+(Usa "git add <file>..." para actualizar lo que se confirmará).
+(Usa "git restore <file>..." para descartar los cambios en el directorio de trabajo).
+ 	Modificado: README.md
+
+
+********************************************************************************************************************************************************************
+
+ 				■ SIGNIFICADO DE LAS LETRAS U, M, A, D
+
+■ En Git (y en VS Code cuando trabajas con Git), esas letras indican el estado del archivo respecto a la última versión registrada.
+
+Aquí tienes la tabla de significados:
+
+Letra	Significa			Estado en Git					Ejemplo de cuándo aparece
+
+♦ U	Untracked(Sin Seguimiento)____	Git no sigue este archivo aún._________________	Creaste un archivo nuevo y nunca hiciste git add.
+
+♦ M	Modified______________________	Archivo ya rastreado, pero con  		Cambiaste el contenido de un archivo que ya estaba en el
+ 					cambios no confirmados.________________________ repositorio.
+
+♦ A	Added_________________________	Archivo nuevo agregado al staging área.________	Hiciste git add a un archivo nuevo pero aún no hiciste git commit.
+
+♦ D	Deleted_______________________	Archivo eliminado en el working directory._____	Borraste un archivo y Git detecta que ya no existe.
+
+💡 Notas importantes:
+
+♦ U y A se aplican sobre archivos nuevos.
+
+♦ M y D se aplican sobre archivos ya rastreados por Git.
+
+► Estos estados cambian según hagas git add, git commit o modifiques/elmines archivos.
+
+
+********************************************************************************************************************************************************************
+
+ 				■ COMANDOS PARA REPOSITORIOS REMOTOS
+
+► El comando git remote se usa para ver, agregar o gestionar los repositorios remotos que tu repositorio local tiene configurados.
+
+📌 Uso básico
+1️⃣ Ver remotos configurados
+ 	→ git remote
+ 	Muestra solo los nombres de los remotos (por ejemplo, origin).
+
+2️⃣ Ver remotos con sus URLs
+ 	→ git remote -v
+
+ 	Ejemplo de salida:
+ 	• origin  https://github.com/usuario/repositorio.git (fetch)
+ 	• origin  https://github.com/usuario/repositorio.git (push)
+
+ 	• origin → nombre del remoto.
+ 	• URL → dirección del repositorio remoto.
+ 	• fetch/push → URL usada para obtener (fetch) o enviar (push) cambios.
+
+3️⃣ Agregar un remoto
+ 	→ git remote add origin https://github.com/usuario/repositorio.git
+ 
+ 	Esto vincula el remoto con el nombre origin a la URL indicada.
+
+4️⃣ Cambiar la URL de un remoto
+ 	→ git remote set-url origin https://github.com/usuario/nuevo-repo.git
+
+5️⃣ Eliminar un remoto
+ 	→ git remote remove origin
+
+💡 Ejemplo rápido de flujo:
+
+ 	→ git init
+ 	→ git remote add origin https://github.com/usuario/repositorio.git
+ 	→ git remote -v
+
+
+********************************************************************************************************************************************************************
+
+ 				■ Enviar cambios a GitHub
+
+ 	• PRIMERO CLONAR EL REPOSITORIO
+→ git clone https/SSH
+
+ 	• ENVIAR LOS DATOS AL REPOSITORIO REMOTO
+→ git push origin main : Comando usado para enviar los cambios realizados en un repositorio local a un repositorio remoto
+ 	     para que ambos tengan la misma información.
+
+
+
+********************************************************************************************************************************************************************
+
+ 				■ Actualizar repositorio local cambios con pull
+
+→ git pull origin main : Comando usado para descargar el contenido de un repositorio remoto e inmediatamente actualizar
+ 	     		 un repositorio local para que ambos tengan la misma información.
+
+
+********************************************************************************************************************************************************************
+
+ 				■ git pull vs git fetch
+
+→ git fetch origin main : Comando usado para verificar los cambios realizados en el repositorio remoto sin combinar esos cambios con el repositorio local.
+ 			  Te permite saber si se han realizado cambios en el repositorio remoto desde la ultima vez que actualizaste
+ 			  tu repositorio local con git pull.
+
+ 	• SALTAR DE UN REPOSITORIO LOCAL A UNO REMOTO.
+→ git checkout origin/main
+
+ 	• VOLVER A LA RAMA LOCAL.
+→ git checkout main
+
+ 	• AGREGAR EL ARCHIVO AL REPOSITORIO
+→ git add nombre-archivo = git add .
+
+ 	• AGREGAR UN REPOSITORIO REMOTO GENERADO POR GitHub.
+→ git remote add origin <https-github>
+
+
+********************************************************************************************************************************************************************
+
+
+ 				■ Bifurcar(fork) un repositorio.
+
+• Crear una copia del repositorio remoto en tu cuenta de GitHub.
+• Al Bifurcar un repositorio, puedo contribuir al repositorio mediante pull request
+
+
+********************************************************************************************************************************************************************
+
+ 				■ Abrir el Editor por defecto en Git Bash.
+→ code .
+
+
+********************************************************************************************************************************************************************
+
+ 				■ ENVIAR UN REPOSITORIO LOCAL A GitHub.
+
+→ git remote add origin https://github.com/TU_USUARIO/mi-proyecto.git
+
+ 	• ENVIAR EL CONTENIDO A GitHub
+→ git branch -M main
+→ git push -u origin main    •💡 El -u sirve para que en el futuro solo tengas que usar:
+
+
+→ git push .Sin escribir origin main cada vez.
+
+
+********************************************************************************************************************************************************************
+ 
+ 				■ Pull Request (Solicitud de extracción)
+
+Solicitud de combinar tus cambios con el repositorio original del proyecto.
+
+
+********************************************************************************************************************************************************************
+
+ 				■ pull request a partir de una rama
+
+🔹 Importancia de usar ramas
+1. Separar el trabajo
+ 	Cada rama es como una línea de tiempo independiente.
+ 	• Puedes desarrollar una nueva funcionalidad (feature-login) sin afectar la rama principal (main).
+ 	• Así, si algo sale mal, no rompes el proyecto principal.
+2. Experimentar sin miedo
+ 	• Puedes probar nuevas ideas en una rama.
+ 	• Si no funciona → simplemente borras la rama, y tu proyecto principal nunca se ve afectado.
+
+3. Colaboración en equipo
+ 	• Cada miembro del equipo trabaja en su propia rama.
+ 	• Luego, mediante Pull Requests, se revisan y fusionan los cambios al proyecto principal.
+ 	• Evita que el trabajo de uno interfiera con el de otro.
+
+4. Mejor organización
+ 	• Puedes tener ramas para diferentes propósitos:
+ 	   • feature/ → nuevas funcionalidades.
+ 	   • bugfix/ → corrección de errores.
+ 	   • hotfix/ → parches rápidos en producción.
+ 	   • release/ → preparar versiones estables.
+ 	   • Esto ayuda a llevar un control claro de lo que se está desarrollando.
+
+5. Historial más limpio
+ 	• Al mantener el desarrollo separado en ramas, los merges hacia main son más ordenados.
+ 	• Facilita leer el historial de commits y entender qué cambios corresponden a cada funcionalidad.
+
+📌 Ejemplo real
+Imagina que tienes una web en producción:
+ 	• La rama main contiene el código estable.
+ 	• Creas una rama feature-chat para añadir un chat.
+ 	• Mientras tanto, otro compañero crea bugfix-login para corregir el login.
+ 	• Ninguno rompe la rama principal → hasta que sus cambios estén listos y revisados.
+
+✅ En resumen:
+Trabajar con ramas en Git te da seguridad, orden, colaboración y control sobre el desarrollo de tu proyecto.
+
+
+
+********************************************************************************************************************************************************************
+
+ 				■ COMANDOS GITHUB
+
+♦ …o crear un nuevo repositorio en la línea de comandos
+
+• Si el archivo no existe lo Crea y su contenido seria : # proyecto-JavaScript
+• echo "# proyecto " → imprime el texto| # proyecto |en la terminal.
+• >> → redirige la salida para añadir ese texto al final de un archivo (si no existe, lo crea).
+• README.md → es el archivo de destino (Markdown), normalmente usado como portada o descripción del repositorio.
+
+→ echo "# proyecto-javascript" >> README.md
+→ git init
+→ git add README.md
+→ git commit -m "primer commit"
+→ git branch -M main
+→ git remote add origin git@github.com:Brayan-SH/proyecto-javascript.git
+ → git push -u origin main
+
+♦ …o enviar un repositorio existente desde la línea de comandos
+→ git remoto agregar origen git@github.com:Brayan-SH/proyecto-javascript.git
+ → git rama -M principal
+→ git push -u origen principal

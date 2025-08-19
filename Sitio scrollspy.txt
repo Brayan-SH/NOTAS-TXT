@@ -1,0 +1,40 @@
+ 					cuenta hotmail
+usuario:                  				     contraseña:
+brayan.saleshernandez@hotmail.com		             programacion4
+
+protected void Page_Load(object sender, EventArgs e)
+{
+    // Intenta encontrar el control por su ID
+    System.Web.UI.WebControls.TextBox miTextBoxWeb = (System.Web.UI.WebControls.TextBox)FindControl("miTextBox");
+
+    if (miTextBoxWeb != null)
+    {
+        // Obtén el texto del TextBox web
+        string textoWeb = miTextBoxWeb.Text;
+
+        // Puedes hacer algo con el texto, como imprimirlo en la consola o usarlo en otras operaciones
+        Console.WriteLine("Texto del TextBox web: " + textoWeb);
+    }
+    else
+    {
+        // El control no se encontró
+        Console.WriteLine("No se pudo encontrar el TextBox web con el ID especificado.");
+    }
+
+    // También puedes intentar encontrar el control de Windows Forms, si es necesario
+    System.Windows.Forms.TextBox miTextBoxForms = (System.Windows.Forms.TextBox)FindControl("miTextBox");
+
+    if (miTextBoxForms != null)
+    {
+        // Obtén el texto del TextBox de Windows Forms
+        string textoForms = miTextBoxForms.Text;
+
+        // Puedes hacer algo con el texto, como imprimirlo en la consola o usarlo en otras operaciones
+        Console.WriteLine("Texto del TextBox de Windows Forms: " + textoForms);
+    }
+    else
+    {
+        // El control no se encontró
+        Console.WriteLine("No se pudo encontrar el TextBox de Windows Forms con el ID especificado.");
+    }
+}

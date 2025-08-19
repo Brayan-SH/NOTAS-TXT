@@ -1,0 +1,49 @@
+				■ COMANDOS VSCODE , JSCRIPT & PYTON.
+
+MAYUS + ALT + A...……………………………………… /* Agregar comentario */.
+CTRL + D...………………………………………………………… Seleccionar una palabra completa.
+MAYUS + ALT + FLECHITA...…………………… Duplicar línea.
+ALT + CLICK_IZQUIERDO...……………………… Alternar el cursor en varias líneas.
+CTRL + ALT + FLECHA(↑/↓) ……………….. Poner el cursor en varias líneas.
+ALT + FLECHA (↑/↓) …………………………………… Subir o baja la linea.
+SHIFT + ALT + F...……………………………………… Refactorizar código(Tabulación o Sangrado).
+CTRL + SHIFT + L...…………………………………… Seleccionar todas las repeticiones.
+CTRL + ALT FLECHA(←/→) …………………….. Dividir la ventana en la que estamos trabajando.
+CTRL + SUPR...………………………………………………… Elimina hacia ADELANTE.
+CTRL + DELETE...…………………………………………. Elimina hacia ATRAS.
+ALT + FLECHA(←/→)………………………………………… Para cambiar entre pestañas vscode.
+CTRL + ESPACIO...………………………………………… Ver opciones.
+Cursor sobre la palabra + F12...… Ir a definición y a su implementacion de la palabra.
+F11...……………………………………………………………………… Maximizar vscode.
+Alt + 96...………………………………………………………… Backticks/Plantillas literales(``).
+Shift + Tabulación...……………………………… Disminuir Sangria con espacios.
+CTRL + Click_Izquierdo…………………………… Si me encuentro en el .HTML y quiero ir al archivo .js en el que estoy trabajando.
+CTRL + SHIFT + J...…………………………………… Abrir la consola del browser.
+CTRL + Ç...………………………………………………………… Comentar/DesComentar.
+F9 ……………………………………………………………………………. Agregar un punto de interrupción.
+!……………………………………………………………………………….. Abreviación emmet.
+Backspace……………………………………………………………. Tecla borrar en JS.
+'keydown'……………………………………………………………. Evento(Cuando el usuario presiona cualquier tecla).
+F7 ……………………………………………………………………………. Busca todas las coincidencias de una palabra o variable.
+CTRL + SHIFT + O ………………………………………… Historial de todas las funciones implementadas en el proyecto.
+CTRL + SHIFT + F ………………………………………… Busca por palabras clave en el proyecto. 
+CTRL + B ……………………………………………………………… Muestra el panel de control.
+CTRL + ↑ ……………………………………………………………… Desplaza la vista del editor hacia ARRIBA, sin mover el cursor.
+CTRL + ↓ ……………………………………………………………… Desplaza la vista del editor hacia ABAJO, sin mover el cursor.
+Alt + 7...…………………………………………………………. • 
+Alt + 254 ……………………………………………………….. ■
+Ctrl + Shift + Enter ………………………….. Escribir nueva linea de código arriba.
+Ctrl + Shift + | …………………………………….. Ir al corchete.
+F12 …………………………………………………………………………. Para abrir la consola.
+Ctrl + L ………………………………………………………….. Despejar la consola
+F8 ………………………………………………………………………….. Siguiente problema.
+Myus + F8 ……………………………………………………….. Anterior problema.
+Alt + F3 ………………………………………………………... Cambio siguiente.
+Shift + Alt + F3 …………………………………….. cambio anterior.
+CTRL + G ………………………………………………………….. Ir a la linea o columna.
+CTRL + ALT + I ………………………………………….. Chat de Copilot.
+
+CUENTA SMARTER
+USUARIO: BrayaSalesss
+CONTRASEÑA: programacion4
+CORREO ELECTRONICO: brayanS123@hotmail.com

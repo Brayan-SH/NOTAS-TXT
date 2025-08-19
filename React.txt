@@ -1,0 +1,248 @@
+						■ React
+
+♦ CONCEPTOS BASICOS EN React.
+♦ DESCARGAR E INSTATALAR Node.js
+♦ JavaScript XML(JSX).
+♦ ESTRUCTURA BASICA DE UNA APLICACION DE REACT.
+♦ COMPONENTES DE CLASE.
+♦ ADAPTAR LOS PRIMEROS 2 PROYECTOS CON COMPONENTES DE CLASE.
+	• Clon de testimonios de freeCodeCamp.
+	• Contador de clics.
+
+
+	■ React : 
+Biblioteca(Librería) de JavaScript de código abierto(Repositorio Open Source) diseñada para crear interfaces de usuario.
+
+
+	■ BIBLIOTECA :
+Conjunto de implementaciones o subprogramas que podemos usar en nuestro código.
+
+
+	■ VENTAJAS DE React :
+♦ Fácil de aprender y usar.
+♦ Componentes reutilizables.
+♦ Crear aplicaciones dinámicas : Aplicaciones que interactúan con el usuario.
+♦ Buen desempeño : Trabaja actualizando solo las partes de la app que se deben actualizar.
+
+
+	■ COMPONENTES (CLASE/FUNCIONAL) : 
+• Parte de la interfaz de usuario que es independiente y reusable.
+• Anteriormente usábamos componentes de clase para poder trabajar con (estados) de nuestros componentes.
+
+	♦ COMPONENTE FUNCIONAL : 
+Función de JavaScript/ES6 que retorna un elemento de React(JSX).
+CARACTERISTICAS : 
+• Debe retornar un elemento de React(JSX).
+• Debe comenzar con una letra Mayúscula.
+• Puede recibir valores(ARGUMENTOS) si es necesario.
+• Los argumentos solo pueden ser enviados de padre a hijo.
+
+► EJEMPLO :
+function Saludo (props) {
+   return <h1>¡Hola , {props.nombre}!</h1>;
+}
+
+	♦ COMPONENTES DE CLASE : 
+Clase ES6(JavaScript moderno) que retorna un elemento JSX.
+CARACTERISTICAS :
+• Debe extender React.Component para extender todas las propiedades(FUNCIONES) de un componente de React.
+• Debe tener un método Render()/mostrar() para retornar un elemento JSX.
+• Puede recibir valores si es necesario.
+
+► EJEMPLO :
+class Saludo extends React.component {
+  render() {
+    return <h1>¡Hola, {this.props.nombre}! </h1>
+  }
+}
+
+
+	■ ESTADO :
+• Representación en JS del conjunto de propiedades de un componente y sus valores actuales.
+• En este concepto, "propiedades" NO se refiere a los props, sino a información que se representa sobre el componente.
+
+
+	■ ¿PORQUE COMPONENTES DE CLASE? :
+• Anteriormente, usábamos componentes de clase para poder trabajar con "estados" de nuestros componentes.
+• En versiones anteriores de React (anteriores a 16.8), NO podíamos hacerlo en componentes funcionales asta que vinieron los ¡Hooks!.
+
+
+	■ Hooks/Anzuelo : 
+• Función especial definida en React que te permite trabajar con estados en componentes funcionales y otros aspectos de React.
+• Sin escribir un componente de clase.
+• Este nos permite escribir codigo mucho mas conciso y facil de entender.
+Sirve para agregarle la funcionalidad que le faltaba a los ■COMPONENTES FUNCIONALES.
+
+
+	■ EVENT LISTENER :
+• Funcion en JS que es ejecutada cuando ocurre un evento especifico.
+• Tambien podemos referirnos a esta funcion como Event Handler.
+
+	► CONCEPTOS IMPORTANTES :
+		♦ Componente
+		♦ props
+		♦ Estado
+		♦ Hooks
+		♦ Event Listener
+
+
+	■ Node.js : 
+• Es un entorno de ejecución para JavaScript construido con V8, motor de JavaScript de Chrome.
+Permite ejecutar JavaScript fuera de un browser(navegador).
+• Ejecuta JS fuera de un browser.
+
+
+	■ VERSION DE Node.js
+→ node -b
+
+
+■ JSX/JavaScript XML : 
+• JSX : Extensión de React para la sintaxis de JavaScript,
+• Nos permite describir en Js como se verán los componentes usando una estructura similar a HTML.
+	♦ VENTAJAS DE JSX
+	  • Estructura mas fácil de visualizar.
+	  • Errores y advertencias mas útiles.
+
+
+	▄ ELEMENTOS EN JSX
+• ELEMENTO : Unidades mas pequeñas en React.
+• Definen lo que se ve en la pantalla.
+
+
+	■ ELEMENTOS vs COMPONENTES
+♦ COMPONENTE : Los componentes en React están "hechos" de elementos.
+	• Los componentes definidos por el usuario comienzan con una letra Mayuscula.
+
+♦ ELEMENTO : Con JSX, puedes crear y usar cualquier elemento HTML.
+	• En JSX, los elementos HTML se representan con etiquetas en letras minúsculas.
+	• Se pueden agregar atributos a los elementos en JSX para especificar ciertas características.
+	• Pero... algunos se escriben de forma distinta si los comparamos con HTML.
+	• class es una palabra reservada en JS que podemos usar para crear una clase. Por eso necesitamos escribir este atributo de 	forma distinta en JSX.
+
+► EJEMPLO :
+	• en HTML las clases se escriben <h1 class="nombre-clase">Title</h1>
+	• en React las clases se escriben <h1 className="nombre-clase">Title</h1>
+
+► EL ATRIBUTO for TAMBIEN CAMBIA
+	• JS : <label for="css">css</label>
+	• JSX : <label htmlfor="css">css</label>
+
+
+	■ ROOT = raiz
+• Elemento principal que va contener toda la aplicación.
+• El proceso de la inserción de la aplicación va estar manejado por React Dom.
+
+
+	■React DOM
+• Paquete que facilita la interacción y actualización del DOM en aplicaciones React.
+
+
+	■ DOM(Document Object Model) : 
+• DOM = Modelo de Objeto del Documento.
+• Representación en el navegador de todos los elementos que conforman una pagina o aplicaciones web.
+	
+► EJEMPLO : Insertar un elemento al div...
+<div class="root"></div> // Elemento Raíz.
+
+const elemento = <h1>¡Hola, Mundo!</h1>
+
+ReactDom.render ( Permite mostrar un elemento especifico dentro de otro elemento.
+  elemento, // Elemento a Renderizar/mostrar.
+  document.getElementId('root') // Contenedor donde se va insertar el elemento.
+);
+
+
+	■ ESTRUCTURA
+• Al igual que en HTML, los elementos pueden ser anidados en JSX para formar estructuras mas complejas.
+
+
+	■ Self Closing Tag (Etiqueta de cierre automático)
+• Elemento que solo posee una etiqueta de apertura ya que no contiene texto u otros elementos.
+
+
+	■ JavaScript EN JSX con {}
+
+
+	■ El atributo style acepta un objeto JS con propiedades CSS escritas en camelCase.
+► EJEMPLO :
+• css : background-image
+• JSX : backgroundImage
+
+
+
+_________________________________________________________________________________________________
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Created git commit.
+
+Success! Created mi-app at C:\Users\braya\OneDrive\Datos adjuntos\Documentos\Cursos\Freecodecamp\Aprendiendo React desde cero\REACT-PRUEBAS\mi-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration f  npm run eject
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd mi-app
+  npm start
+
+Happy hacking!
+
+--------------------------------------------------------------------------------------------
+
+Para solucionar todos los problemas (incluidos los cambios importantes), ejecuta:
+npm audit fix --force
+
+Ejecuta `npm audit` para obtener más información.
+
+Se ha creado la confirmación de Git.
+
+¡Correcto! Mi-app se ha creado en C:\Users\braya\OneDrive\Datos adjuntos\Documentos\Cursos\Freecodecamp\Aprendiendo React desde cero\REACT-PRUEBAS\mi-app.
+Dentro de ese directorio, puedes ejecutar varios comandos:
+
+npm start
+Inicia el servidor de desarrollo.
+
+npm run build
+Agrupa la aplicación en archivos estáticos para producción.
+
+npm test
+Inicia el ejecutor de pruebas.
+
+npm run eject
+Elimina esta herramienta y copia las dependencias de compilación, la configuración f npm run eject
+y los scripts en el directorio de la aplicación. Si haces esto, ¡no podrás volver atrás!
+
+Te sugerimos que empieces escribiendo:
+
+cd mi-app
+npm start
+
+¡Que disfrutes del hacking!
+_________________________________________________________________________________________________
+ 
+	■ cd = (cambiar de directorio = change directory)
+
+
+	■ COMANDO PARA CREAR LA APLICACION INICIAL DE REACT
+→ npx create-react-app nombre-del-proyecto
+
+
+	■ Inicia el servidor de desarrollo.
+→ npm start
+
+	■ DIRECCION PARA LLEGAR A LA CARPETA freeCodeCamp desde Git Bash
+→ cd 'oneDrive/datos adjuntos/documentos/cursos/freecodecamp/aprendiendo react desde cero/react-pruebas'

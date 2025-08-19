@@ -1,0 +1,3 @@
+		■ Python 4 Semestre
+• quick sort (ordenamiento rapido) es un algoritmo que se usa para ordenar listas, es decir, poner en orden los elementos de menor a mayor (o viceversa).
+

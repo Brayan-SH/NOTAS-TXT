@@ -1,27 +1,21 @@
 ■ URLS :
 
-	■ NodeJS
+	♦ NodeJS
 → nodejs.org/es/
 	
-	■ Pagina de React
+	♦ Pagina de React
 → reactjs.org
 
-	■ Git Bash 
+	♦ Git Bash 
 → git-scm.com
 
-	■ GitHub
+	♦ GitHub
 → GitHub.docs
 
-	■ vscode desarrollado por Microsoft.
+	♦ vscode desarrollado por Microsoft.
 → code.visualstudio.com
 
-
-
-
-
-
-
-
+	
 
 
 
@@ -39,7 +33,3 @@ AGENCIA VIRTUAL Doña Ofe :
 
 USUARIO(NIT) : 218838182
 CONTRASEÑA : Ofis123.
-
-
-
-

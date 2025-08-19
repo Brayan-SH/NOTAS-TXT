@@ -446,6 +446,7 @@ Letra	Significa			Estado en Git					Ejemplo de cuándo aparece
 
 ********************************************************************************************************************************************************************
 
+
  				■ Actualizar repositorio local cambios con pull
 
 → git pull origin main : Comando usado para descargar el contenido de un repositorio remoto e inmediatamente actualizar
@@ -453,6 +454,7 @@ Letra	Significa			Estado en Git					Ejemplo de cuándo aparece
 
 
 ********************************************************************************************************************************************************************
+
 
  				■ git pull vs git fetch
 

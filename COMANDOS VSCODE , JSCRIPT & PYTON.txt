@@ -30,8 +30,11 @@ CTRL + SHIFT + F ………………………………………… Busca por pala
 CTRL + B ……………………………………………………………… Muestra el panel de control.
 CTRL + ↑ ……………………………………………………………… Desplaza la vista del editor hacia ARRIBA, sin mover el cursor.
 CTRL + ↓ ……………………………………………………………… Desplaza la vista del editor hacia ABAJO, sin mover el cursor.
-Alt + 7...…………………………………………………………. • 
+Alt + 7 ..…………………………………………………………. •
 Alt + 254 ……………………………………………………….. ■
+Alt + 4 .………………………………………………………….. ♦
+Alt + 16 ………………………………………………………….. ►
+Alt + 26 ………………………………………………………….. →
 Ctrl + Shift + Enter ………………………….. Escribir nueva linea de código arriba.
 Ctrl + Shift + | …………………………………….. Ir al corchete.
 F12 …………………………………………………………………………. Para abrir la consola.

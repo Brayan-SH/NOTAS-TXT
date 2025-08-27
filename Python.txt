@@ -1,55 +1,133 @@
- 			  	■ Python
+	■ Python
+♦ METODOS DE LAS CADENAS DE CARACTERES:
+→ Capitalize
+♦ Permiten encontrar caracteres o cadenas dentro de otra:
+→ Find
+→ index
+♦ Retorna true o false:
+→ isalnum
+→ isalpha
+→ isdecimal
+→ isdigit
+→ islower
+→ isupper
+→ isupper
+→ upper
+♦ OPERADORES ARITMETICOS:
+→ =
+→ -=
+→ /=
+→ //=
+→ +=
+→ *=
+→ **=
+→ %=
+	■ LISTAS:
+✅ Sintaxis básica:
+🔧 Operaciones comunes con listas:
+1. Acceder a elementos:
+2. Modificar un valor:
+3. Agregar elementos:
+4. Eliminar elementos:
+5. Longitud de una lista:
+6. Recorrer con un bucle:
+7. Verificar si un valor está:
+🧠 Otras funciones útiles:
+♦ Método
+→ lista.sort()
+→ sorted( lista )
+→ lista.reverse()
+→ lista.copy()
+→ lista.clear()
+→ lista.count( x )
+→ lista.index( x )
+→ lista.extend( otra_lista )
+	■ TUPLA
+	■ Archivos
+► Modos de apertura de Archivos:
+→ r (read - leer)
+→ w (write - escribir)
+→ a (append - añadir)
+→ Agregar un + incluye leer. por ejemplo: w+ es leer y escribir.
+🔹 Leer el archivo.
+♦ Escribir en el archivo.
+
+🔹 1. Abrir un archivo
+► Se usa la función open(nombre, modo):
+• "r" → leer (default, error si no existe).
+• "w" → escribir (crea el archivo o sobrescribe).
+• "a" → añadir al final (append).
+• "r+" → leer y escribir.
+🔹 2. Leer un archivo
+🔹 3. Escribir (sobrescribir) en un archivo
+✅ Con with no necesitas close(), se cierra solo.
+🔹 4. Añadir contenido sin borrar lo anterior
+🔹 5. Leer todas las líneas en lista
+🔹 6. Escribir lista de líneas
+📌 En resumen:
+→ open("archivo.txt", "r") → leer.
+→ open("archivo.txt", "w") → sobrescribir.
+→ open("archivo.txt", "a") → agregar.
+→ Usa with open(...) as f: → más seguro y limpio.
+
+--------------------------------------------------------------------------------------------------------
+
+ 			  		■ Python
 
 IDLE: Entorno integrado de programación que se instala automáticamente cuando instalas Python
 
 ¿Qué puede hacer IDLE?
 Escribir, Editar, Ejecutar.
 
-METODOS DE LAS CADENAS DE CARACTERES:
+--------------------------------------------------------------------------------------------------------
 
-• Capitalize Retorna una copia de la cadena con el primer carácter en mayúsculas y el resto de minúsculas.
+♦ METODOS DE LAS CADENAS DE CARACTERES:
+
+→ Capitalize : Retorna una copia de la cadena con el primer carácter en mayúsculas y el resto de minúsculas.
 cadena.capitalize().
 
-Permiten encontrar caracteres o cadenas dentro de otra:
-• Find
-• index
+♦ Permiten encontrar caracteres o cadenas dentro de otra:
+→ Find
+→ index
 
-Retorna true o false:
+♦ Retorna true o false:
 Si solo contiene caracteres alfaNumericos:
-• isalnum
+→ isalnum
 
 Si solo contiene caracteres alfabéticos:
-• isalpha
+→ isalpha
 
 Si solo contiene caracteres decimales:
-• isdecimal
+→ isdecimal
 
 Si solo contiene dígitos:
-• isdigit
+→ isdigit
 
 Si solo contiene caracteres en minúsculas:
-• islower
+→ islower
 
 Si solo contiene caracteres en mayúsculas:
-• isupper
+→ isupper
 
 Retorna una copia en minúsculas de la cadena de caracteres.
-• lower
+→ lower
 
 Retorna una copia en mayúsculas de la cadena de caracteres.
-• upper
+→ upper
 
-OPERADORES ARITMETICOS:
-• =
-• -=
-• /=
-• //=
-• +=
-• *=
-• **=
-• %=
+♦ OPERADORES ARITMETICOS:
+→ =
+→ -=
+→ /=
+→ //=
+→ +=
+→ *=
+→ **=
+→ %=
 
-								LISTAS:
+--------------------------------------------------------------------------------------------------------
+
+						■ LISTAS:
 ['a', 'b', 'c'...]
 [1, 2, 3...]
 
@@ -85,65 +163,104 @@ for item in mi_lista:
 "hola" in mi_lista | # True o False
 
 🧠 Otras funciones útiles:
-Método		    Descripción
-lista.sort()	|   Ordena (modifica la lista).
-sorted(lista)	|   Ordena (sin modificar la original).
-lista.reverse()	|   Invierte el orden.
-lista.copy()	|   Copia la lista.
-lista.clear()	|   Borra todos los elementos.
-lista.count(x)	|   Cuenta cuántas veces aparece x.
-lista.index(x)	|   Devuelve el índice de x.
-lista.extend(otra_lista)  |  Extender la lista agregándole los elementos de otra lista.
+♦ Método		                      Descripción
+→ lista.sort()	            |   Ordena (modifica la lista).
+→ sorted(lista)	            |   Ordena (sin modificar la original).
+→ lista.reverse()	    |   Invierte el orden.
+→ lista.copy()              |   Copia la lista.
+→ lista.clear()	            |   Borra todos los elementos.
+→ lista.count(x)	    |   Cuenta cuántas veces aparece x.
+→ lista.index(x)            |   Devuelve el índice de x.
+→ lista.extend(otra_lista)  |   Extender la lista agregándole los elementos de otra lista.
 
-							TUPLA
+--------------------------------------------------------------------------------------------------------
+
+				■ TUPLA
+
 Estructura de datos inmutable que contiene una secuencia ordenada de elementos.
 Se pueden acceder con subíndices.
 
-CARACTERISTICAS:
+♦ CARACTERISTICAS:
 secuencia ordenada de valores.
 Puede contener valores de cualquier tipo de datos.
 puede contener valores de distintos tipos de datos.
 Cada posición de la tupla se identifica con un entero denominado 'indice'.
 Es inmutable. No puede ser modificada.
 
-							Archivos
-Modos de apertura de Archivos:
+--------------------------------------------------------------------------------------------------------
+
+				■ Archivos
+
+► Modos de apertura de Archivos:
 • r (read - leer)
 • w (write - escribir)
 • a (append - añadir)
 • Agregar un + incluye leer. por ejemplo: w+ es leer y escribir.
 
-# Leer el archivo.
+🔹 Leer el archivo.
   with open('nombre_archivo.text', 'r') as archivo: 
     for linea in archivo:
       print('=== Frase ===')
       print(linea)
       
-  # Escribir en el archivo.
+  ♦ Escribir en el archivo.
   with open('nombre_archivo.txt', 'w') as archivos: print
 
+🔹 1. Abrir un archivo
+
+► Se usa la función open(nombre, modo):
+
+• "r" → leer (default, error si no existe).
+• "w" → escribir (crea el archivo o sobrescribe).
+• "a" → añadir al final (append).
+• "r+" → leer y escribir.
+
+Ejemplo:
+
+archivo = open("datos.txt", "w")  # Abre para escribir
+archivo.write("Hola, Python!\n")
+archivo.close()
+
+🔹 2. Leer un archivo
+archivo = open("datos.txt", "r")
+contenido = archivo.read()   # Lee todo
+print(contenido)
+archivo.close()
 
 
+• O leer línea por línea:
+
+archivo = open("datos.txt", "r")
+for linea in archivo:
+    print(linea.strip())  # .strip() quita saltos de línea
+archivo.close()
+
+🔹 3. Escribir (sobrescribir) en un archivo
+with open("datos.txt", "w") as archivo:
+    archivo.write("Primera línea\n")
+    archivo.write("Segunda línea\n")
 
 
+✅ Con with no necesitas close(), se cierra solo.
 
+🔹 4. Añadir contenido sin borrar lo anterior
+with open("datos.txt", "a") as archivo:
+    archivo.write("Nueva línea añadida\n")
 
+🔹 5. Leer todas las líneas en lista
+with open("datos.txt", "r") as archivo:
+    lineas = archivo.readlines()
 
+print(lineas)   # ['Primera línea\n', 'Segunda línea\n', 'Nueva línea añadida\n']
 
+🔹 6. Escribir lista de líneas
+lineas = ["Uno\n", "Dos\n", "Tres\n"]
 
-menor = 2 
+with open("numeros.txt", "w") as archivo:
+    archivo.writelines(lineas)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+📌 En resumen:
+→ open("archivo.txt", "r") → leer.
+→ open("archivo.txt", "w") → sobrescribir.
+→ open("archivo.txt", "a") → agregar.
+→ Usa with open(...) as f: → más seguro y limpio.

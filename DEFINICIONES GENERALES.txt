@@ -10,23 +10,9 @@ LOS ARGUMENTOS : son los valores que le pasamos (y que, por tanto, recibe) una f
 1. Convenciones de nombres (Naming conventions)
 Se usan para nombrar variables, funciones, clases, archivos, etc.
 
-Estilo		Ejemplo		Uso común
-snake_case	mi_variable	Python, bases de datos
-camelCase	miVariable	JavaScript, Java
-PascalCase	MiClase		Clases en C#, Java, Python
-kebab-case	mi-variable	URLs, nombres de archivos
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+■ Estilo		Ejemplo		Uso común
+• snake_case :	mi_variable	Python, bases de datos
+• camelCase :	miVariable	JavaScript, Java
+• PascalCase :	MiClase		Clases en C#, Java, Python
+• kebab-case :	mi-variable	URLs, nombres de archivos
 

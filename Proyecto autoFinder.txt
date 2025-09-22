@@ -1,0 +1,67 @@
+Perfecto, vamos a desglosar lo que necesitas saber y preparar para crear una web y una app para tu proyecto de control de vehículos en predios (tipo AutoFinder Xela). Te lo voy a explicar paso a paso:
+
+1️⃣ Planificación y diseño
+Antes de programar, debes tener claro:
+Requerimientos del proyecto:
+Funciones principales (registro de autos, búsqueda, favoritos, agenda de visitas).
+Roles de usuario (comprador y vendedor).
+Datos a manejar:
+Vehículos, predios, usuarios, fotos/videos, precios, contactos.
+Diseño de la interfaz (UI/UX):
+Cómo se verá la app/web.
+Cómo navegará el usuario (diagrama de flujo, wireframes, prototipo).
+Herramientas útiles: Figma, Adobe XD, Canva para prototipos.
+
+2️⃣ Desarrollo Front-end
+Es la parte visible para el usuario.
+Web:
+HTML, CSS, JavaScript (básico).
+Frameworks modernos opcionales: React.js, Vue.js o Angular.
+Diseño responsivo (que funcione en computadoras y móviles).
+App móvil:
+Nativa: Swift (iOS), Kotlin/Java (Android).
+Multiplataforma: Flutter (Dart), React Native, Ionic.
+Funcionalidades básicas: mostrar autos, filtros, favoritos, agenda.
+
+3️⃣ Desarrollo Back-end
+Es la parte que maneja la información:
+Lenguajes: Python (Django, Flask), Node.js, PHP (Laravel), Java (Spring).
+Funciones del back-end:
+Autenticación de usuarios (login, registro).
+CRUD de vehículos (Crear, Leer, Actualizar, Eliminar).
+Manejo de fotos y videos.
+Agenda de visitas.
+API: permite que la web y la app compartan la misma información.
+
+4️⃣ Base de datos
+Aquí se almacena toda la información:
+Tipos: MySQL, PostgreSQL, SQLite, Firebase (opción sencilla para apps).
+Tablas recomendadas:
+Usuarios
+Vehículos
+Predios
+Favoritos
+Agenda/visitas
+Claves primarias y foráneas para relacionar datos.
+
+5️⃣ Multimedia y almacenamiento
+Fotos y videos de vehículos.
+Servidores o servicios de almacenamiento: AWS S3, Firebase Storage, Cloudinary.
+
+6️⃣ Funciones adicionales
+Notificaciones push (para recordar visitas o alertas de nuevos vehículos).
+Sistema de búsqueda avanzada (filtros por precio, marca, modelo, año).
+Panel de estadísticas para vendedores (cuántas personas vieron o guardaron su auto).
+
+7️⃣ Herramientas de apoyo
+Control de versiones: Git/GitHub.
+Testing: pruebas en navegadores, emuladores o dispositivos móviles.
+Deployment / Publicación:
+Web: Netlify, Vercel, AWS.
+App: Play Store (Android), App Store (iOS).
+
+💡 Tip: Para un proyecto académico, no necesitas todo al 100%. Puedes hacer un prototipo funcional que conecte:
+Web + App básica mostrando vehículos.
+Registro de usuarios y favoritos.
+Agenda simple de visitas.
+Si quieres, puedo hacerte un mapa completo de “lo que necesitas aprender” con tecnologías y pasos para tener lista la web y la app de tu proyecto, organizado por prioridades para que no se vuelva abrumador.

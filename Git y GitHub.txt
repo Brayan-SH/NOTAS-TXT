@@ -27,33 +27,22 @@ ________________________________________________________________________________
 ■ Pull Request (Solicitud de extracción)
 ■ pull request a partir de una rama
 ■ COMANDOS GITHUB
-■ TOKEN
 
 _________________________________________________________________________________________________
 
  					     	■ Git
 COMANDOS :
 → ls __________________________ Listar los Archivos y Carpetas en el directorio actual.
-
 → mkdir _______________________ (abreviatura de make directory(hacer directorio)) Se usa para crear nuevas carpetas o directorios desde la línea de comandos.
-
 → rm --cached <file> __________ Para deshacer la copia de seguridad.
-
 → rmdir _______ 👉 Sólo elimina directorios vacíos.
-
 → rm -r nombre_directorio _____ 🛠️ Para eliminar un directorio con contenido en Git Bash.
-
 → rm -ri nombre_directorio ____ O con confirmación interactiva.
-
 → rm -rf nombre_directorio ____ Y si quieres eliminar sin confirmación y de forma forzada (⚠️ peligro).
-
 → ❌ Si el directorio NO está vacío, verás este error:
 rmdir: failed to remove 'xxx': Directory not empty
-
 → cd __________________________ (abreviatura de change directory) Se usa para moverte entre carpetas (directorios) en la línea de comandos, como Git Bash.
-
 → "" __________________________ Se usan para encerrar texto que contiene espacios o caracteres especiales. Esto es igual que en muchas Otras terminales tipo Unix (Linux, macOS).
-
 → cd .. _______________________ En el sistema de carpetas (moverte al directorio padre del actual).
 
 ********************************************************************************************************************************************************************
@@ -124,13 +113,13 @@ Es como un registro o "foto" del estado de un proyecto en un momento especifico.
 
 Registran los cambios que se realizaron en los archivos en comparación con la versión anterior que se había registrado en el repositorio.
 
-♦ Cada commit tiene un identificador unico
+♦ Cada commit tiene un identificador unico:
 Git le asigna a cada commit un identificador unico llamado SHA(Secure Hash Algorithm = Algoritmo de hash seguro) o hash.
 
- 	♦ SHA(Secure Hash Algorithm = Algoritmo de hash seguro) identifica :
-• Los cambios realizados.
-• Donde se realizaron los cambios.
-• Quien hizo los cambios.
+♦ SHA(Secure Hash Algorithm = Algoritmo de hash seguro) identifica :
+  • Los cambios realizados.
+  • Donde se realizaron los cambios.
+  • Quien hizo los cambios.
 
  	• AGREGAR UN COMMIT AL REPOSITORIO :
 → -m = que voy a escribir un mensaje directamente en la linea de comandos.

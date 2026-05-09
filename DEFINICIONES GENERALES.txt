@@ -4,15 +4,62 @@ PARAMETROS VS ARGUMENTOS
 LOS PARAMETROS : son los nombres que aparecen en la definición de una función. Por su parte, 
 LOS ARGUMENTOS : son los valores que le pasamos (y que, por tanto, recibe) una función.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+ ______________________________________________ ✅ Tipos de convenciones más comunes: ______________________________________________
 
-✅ Tipos de convenciones más comunes:
 1. Convenciones de nombres (Naming conventions)
 Se usan para nombrar variables, funciones, clases, archivos, etc.
 
-■ Estilo		Ejemplo		Uso común
+■ Estilo	Ejemplo		Uso común
 • snake_case :	mi_variable	Python, bases de datos
 • camelCase :	miVariable	JavaScript, Java
 • PascalCase :	MiClase		Clases en C#, Java, Python
 • kebab-case :	mi-variable	URLs, nombres de archivos
+
+______________________________________________ ■ NO MEZCLAR TECNOLOGIAS ______________________________________________
+
+
+→ Python se ejecuta en el servidor.
+→ JavaScript se ejecuta en el navegador.
+• No puedes usar import de Python en el navegador.
+
+______________________________________________ ■ librerías y entornos virtuales ______________________________________________
+
+🧪 → python -m venv venv
+- ¿Qué hace?
+Crea un entorno virtual llamado venv en la carpeta actual.
+- ¿Para qué sirve?
+Aísla tus dependencias de Python para que no afecten otros proyectos. Es ideal para mantener tu sistema limpio y evitar conflictos entre versiones de paquetes
+
+⚙️ → venv\Scripts\activate (Windows)
+- ¿Qué hace?
+Activa el entorno virtual que acabas de crear.
+- ¿Para qué sirve?
+Una vez activado, cualquier paquete que instales con pip se instalará solo dentro de ese entorno, no en todo tu sistema.
+🔸 En Linux/macOS el comando sería: source venv/bin/activate
+
+📦 → pip install flask
+- ¿Qué hace?
+Descarga e instala el paquete Flask desde el repositorio oficial de Python (PyPI).
+- ¿Para qué sirve?
+Flask es un microframework para crear aplicaciones web y APIs. Este comando lo deja listo para usar en tu entorno virtual.
+
+🔍 → pip show flask
+- ¿Qué hace?
+Muestra información sobre el paquete Flask que instalaste.
+- ¿Qué incluye?
+- Versión instalada
+- Ubicación del paquete
+- Dependencias
+- Autor y licencia
+
+🧠 Ejemplo completo en orden
+→ python -m venv venv           # 1. Crear entorno virtual
+→ venv\Scripts\activate         # 2. Activarlo
+→ pip install flask             # 3. Instalar Flask
+→ pip show flask                # 4. Verificar instalación
+
+______________________________________________  ______________________________________________
+
+
+
 

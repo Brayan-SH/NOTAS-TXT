@@ -1,0 +1,79 @@
+								IMPORTACIONES python
+
+→ from flask import Flask, jsonify, render_template_string, send_from_directory
+• Flask: Crea la instancia principal de tu aplicación web. Es el núcleo del servidor.
+• jsonify: Convierte diccionarios o listas de Python en respuestas JSON válidas para APIs. Ideal para enviar datos al frontend.
+• render_template_st: Renderiza HTML directamente desde un string (útil para pruebas rápidas o plantillas generadas dinámicamente).
+• send_from_director: Sirve archivos estáticos (como imágenes, PDFs, etc.) desde una carpeta específica. Muy útil para evidencia visual o descargas
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+→ from flask_cors import CORS
+La línea importa la función CORS desde el paquete , que se usa para habilitar el Cross-Origin Resource Sharing en tu aplicación Flask.
+
+¿Cómo se usa?
+→ app = Flask(__name__)
+
+	EJEMPLO:
+app = Flask(__name__, static_folder='.')
+
+	¿Qué significa static_folder='.'?
+• static_folder es un parámetro opcional que define dónde están tus archivos estáticos (como imágenes, CSS, JS, PDFs, etc.).
+• El valor '.' indica que esos archivos están en el directorio raíz del proyecto, es decir, donde está tu app.py.
+
+	✅ ¿Cuándo usar ?
+• Para pruebas rápidas.
+• Cuando tus archivos están en el mismo nivel que .
+• Si estás sirviendo evidencia visual desde el backend y no quieres mover los archivos a otra carpeta.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+	🔐 ¿Qué es CORS?
+CORS (Cross-Origin Resource Sharing) es una política de seguridad que los navegadores aplican para evitar que una página web haga peticiones a otro dominio distinto del que la sirvió.
+Por ejemplo:
+- Si tu frontend está en http://localhost:3000 (React, Bootstrap, etc.)
+- Y tu backend Flask está en http://localhost:5000
+- Entonces el navegador bloqueará las peticiones AJAX/fetch a tu API Flask… a menos que uses CORS.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+	🔹 import pyodbc
+- ¿Qué hace?
+Permite conectarte a bases de datos como SQL Server desde Python usando el protocolo ODBC.
+
+
+	🔹 import os
+- ¿Qué hace?
+Accede a funciones del sistema operativo: rutas, archivos, variables de entorno, etc.
+- ¿Ejemplos comunes?
+- Obtener la ruta actual:
+
+EJEMPLOS:
+• Construir rutas seguras:
+	→ archivo = os.path.join('static', 'imagen.jpg') >
+• Obtener la ruta actual:
+	→ ruta = os.getcwd()
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+📁 .venv - Carpeta de entorno virtual
+📁 venv:  es una herramienta integrada en Python que permite crear entornos virtuales. Esencial para mantener tus proyectos organizados y evitar conflictos entre dependencias.
+⚙️ ¿Para qué sirve ?
+• ✅ Separar dependencias: Cada proyecto puede tener sus propias versiones de librerías.
+• ✅ Evitar conflictos: No se mezclan paquetes entre proyectos.
+• ✅ Facilita despliegue: Puedes replicar el entorno en otros equipos usando .
+🛠️ ¿Cómo se crea y activa?
+1. Crear el entorno:
+
+🛠️ ¿Cómo se crea y activa?
+1. Crear el entorno:
+→ python -m venv nombre_del_entorno | Esto crea una carpeta con el entorno virtual.
+2. Activar el entorno:
+- En Windows:
+→ nombre_del_entorno\Scripts\activate
+3. Instalar paquetes:
+→ pip install flask
+4. Guardar dependencias:
+→ pip freeze > requirements.txt
+5. Desactivar:
+→ deactivate

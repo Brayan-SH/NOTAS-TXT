@@ -86,29 +86,29 @@ Esto significa que estás marcando los cambios que deseas incluir en tu próximo
 
  					■ 3 AREAS EN GIT
 
-♦ 3 AREAS Y ESTADOS EN LAS QUE PUEDE ESTAR UN ARCHIVO CUANDO CREO UN REPOSITORIO DE GIT
+► 3 AREAS Y ESTADOS EN LAS QUE PUEDE ESTAR UN ARCHIVO CUANDO CREO UN REPOSITORIO DE GIT
 Cada una de esas áreas van a representar un estado distinto del archivo en el repositorio.
 
-♦ 1. Directorio de trabajo (Etapa Modificada(Modified)).
-♦ 2. Área de preparación (Etapa Preparada(Staged)).
-♦ 3. Repositorio (Etapa Confirmada(Committed)).
+→ 1. Directorio de trabajo (Etapa Modificada(Modified)).
+→ 2. Área de preparación (Etapa Preparada(Staged)).
+→ 3. Repositorio (Etapa Confirmada(Committed)).
 
-♦ 1. Directorio de trabajo (Working directory) :
+→ 1. Directorio de trabajo (Working directory) :
 La carpeta del proyecto que contiene todos los archivos y el directorio oculto .git del repositorio.
 
-♦ 2. Area de preparación (Staging area) : Conjunto de archivos y cambios que seran incluidos en el proximo commit.
+→ 2. Area de preparación (Staging area) : Conjunto de archivos y cambios que seran incluidos en el proximo commit.
 
-♦ 3. Repositorio(directorio .git) : Directorio que contiene los metadatos y las versiones del proyecto.
+→ 3. Repositorio(directorio .git) : Directorio que contiene los metadatos y las versiones del proyecto.
 Es la parte del repositorio que se copia cuando clonas un repositorio a la computadora.
 
 ---
 
-♦ Etapa Modificada(Modified) : Si la version del archivo contiene cambios que no son parte del repositorio
+► Etapa Modificada(Modified) : Si la version del archivo contiene cambios que no son parte del repositorio
 y no se ha añadido del area de preparacion.
 
-♦ (Etapa Preparada(Staged) : Si la version del archivo contiene cambios que no son parte del repositorio pero fue añadida al area de preparacion.
+► (Etapa Preparada(Staged) : Si la version del archivo contiene cambios que no son parte del repositorio pero fue añadida al area de preparacion.
 
-♦ (Etapa Confirmada(Committed) : Si la version del archivo ya se encuentra en el directorio oculto .Git .
+► (Etapa Confirmada(Committed) : Si la version del archivo ya se encuentra en el directorio oculto .Git .
 
 Cuando abro el directorio que cree en git bash en vscode, creo un archivo.txt y le aparece una U al archivo
 es porque no estoy rastreando o llevando un registro de los cambios que se van hacer en el archivo.

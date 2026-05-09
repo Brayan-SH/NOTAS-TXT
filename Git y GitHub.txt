@@ -14,6 +14,7 @@ ________________________________________________________________________________
 ■ GIT LOG VER LAS RAMAS
 ■ FUSIONAR RAMAS
 ■ CONFLICTOS AL FUSIONAR RAMAS
+■ NOTES
  	.: ■ GitHub :.
 ■ PROBAR CONECCION CON GITHUB
 ■ SIGNIFICADO DE LAS LETRAS U, M, A, D
@@ -30,7 +31,7 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________
 
- 					     	■ Git
+ 					     .:	■ Git :.
 COMANDOS :
 → ls __________________________ Listar los Archivos y Carpetas en el directorio actual.
 → mkdir _______________________ (abreviatura de make directory(hacer directorio)) Se usa para crear nuevas carpetas o directorios desde la línea de comandos.
@@ -297,6 +298,12 @@ Si intentas fusionar ►ramaB en ►ramaA o viceversa, Git no sabe cuál usar �
 • Y los cambios esten listos para agregarlos al commit. Continuar el proceso con el comando :
  	→ git merge --continue
 
+********************************************************************************************************************************************************************
+
+						   ■ NOTES
+
+• O si prefieres mantener los saltos de línea tal como están:
+→ git config --global core.autocrlf false
 
 ____________________________________________________________________________________________________________________________________________________________________
 

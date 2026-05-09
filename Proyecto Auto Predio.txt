@@ -1,4 +1,4 @@
-Perfecto, vamos a desglosar lo que necesitas saber y preparar para crear una web y una app para tu proyecto de control de vehículos en predios (tipo AutoFinder Xela). Te lo voy a explicar paso a paso:
+Perfecto, vamos a desglosar lo que necesitas saber y preparar para crear una web y una app para tu proyecto de control de vehículos en predios (tipo Auto Predio Xela). Te lo voy a explicar paso a paso:
 
 1️⃣ Planificación y diseño
 Antes de programar, debes tener claro:
@@ -65,3 +65,17 @@ Web + App básica mostrando vehículos.
 Registro de usuarios y favoritos.
 Agenda simple de visitas.
 Si quieres, puedo hacerte un mapa completo de “lo que necesitas aprender” con tecnologías y pasos para tener lista la web y la app de tu proyecto, organizado por prioridades para que no se vuelva abrumador.
+
+____________________________________________________________________________________________________________________________________________________
+
+🎯 Tu proyecto final debería tener:
+Auto-Predio/
+├── venv/              # Entorno virtual
+├── .env              # Credenciales (NO se sube)
+├── .env.example      # Plantilla
+├── .gitignore        # Protección
+├── app.py            # Backend Flask
+├── index.html        # Frontend
+├── README.md         # Documentación
+└── SQLQuery5.sql     # Base de datos
+

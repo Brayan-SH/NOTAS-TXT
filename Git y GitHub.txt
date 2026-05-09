@@ -2,7 +2,7 @@
 
 _________________________________________________________________________________________________
 
- 	.: ■ Git :.
+ 	-- Git --
 ■ COMANDOS GIT
 ■ 3 AREAS EN GIT
 ■ Commits (Comprometerse) = Comfirmar cambios
@@ -15,7 +15,7 @@ ________________________________________________________________________________
 ■ FUSIONAR RAMAS
 ■ CONFLICTOS AL FUSIONAR RAMAS
 ■ NOTES
- 	.: ■ GitHub :.
+ 	-- GitHub --
 ■ PROBAR CONECCION CON GITHUB
 ■ SIGNIFICADO DE LAS LETRAS U, M, A, D
 ■ COMANDOS PARA REPOSITORIOS REMOTOS
@@ -31,7 +31,7 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________
 
- 					     .:	■ Git :.
+ 					     -- Git --
 COMANDOS :
 → ls __________________________ Listar los Archivos y Carpetas en el directorio actual.
 → mkdir _______________________ (abreviatura de make directory(hacer directorio)) Se usa para crear nuevas carpetas o directorios desde la línea de comandos.
@@ -123,8 +123,8 @@ Git le asigna a cada commit un identificador unico llamado SHA(Secure Hash Algor
   • Quien hizo los cambios.
 
  	• AGREGAR UN COMMIT AL REPOSITORIO :
-→ -m = que voy a escribir un mensaje directamente en la linea de comandos.
 git commit -m " mensaje "
+→ -m = que voy a escribir un mensaje directamente en la linea de comandos.
 
  	• VER EL HISTORIAL DE COMMITS
 → git log
@@ -307,7 +307,7 @@ Si intentas fusionar ►ramaB en ►ramaA o viceversa, Git no sabe cuál usar �
 
 ____________________________________________________________________________________________________________________________________________________________________
 
- 					     	.: ■ GitHub :.
+ 					     	-- GitHub --
 
 Es un servicio de Hosting que nos permite almacenar proyectos de desarrollo de software y control de versiones usando Git.
 

@@ -70,7 +70,7 @@ ________________________________________________________________________________
 
 🎯 Tu proyecto final debería tener:
 Auto-Predio/
-├── venv/              # Entorno virtual
+├── venv/             # Entorno virtual
 ├── .env              # Credenciales (NO se sube)
 ├── .env.example      # Plantilla
 ├── .gitignore        # Protección
@@ -78,4 +78,25 @@ Auto-Predio/
 ├── index.html        # Frontend
 ├── README.md         # Documentación
 └── SQLQuery5.sql     # Base de datos
+
+____________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

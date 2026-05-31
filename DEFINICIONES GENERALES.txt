@@ -1,10 +1,10 @@
-						■ DEFINICIONES GENERALES:
+						DEFINICIONES GENERALES:
 
 PARAMETROS VS ARGUMENTOS
 LOS PARAMETROS : son los nombres que aparecen en la definición de una función. Por su parte, 
 LOS ARGUMENTOS : son los valores que le pasamos (y que, por tanto, recibe) una función.
 
- ______________________________________________ ✅ Tipos de convenciones más comunes: ______________________________________________
+ ______________________________________________ ✅ TIPOS DE CONVENCIONES MAS COMUNES: ______________________________________________
 
 1. Convenciones de nombres (Naming conventions)
 Se usan para nombrar variables, funciones, clases, archivos, etc.
@@ -20,9 +20,9 @@ ______________________________________________ ■ NO MEZCLAR TECNOLOGIAS ______
 
 → Python se ejecuta en el servidor.
 → JavaScript se ejecuta en el navegador.
-• No puedes usar import de Python en el navegador.
+→ No puedes usar import de Python en el navegador.
 
-______________________________________________ ■ librerías y entornos virtuales ______________________________________________
+______________________________________________ ■ LIBRERIAS Y ENTONRNOS VIRTUALES _____________________________________________
 
 🧪 → python -m venv venv
 - ¿Qué hace?

@@ -1,8 +1,8 @@
- 						Git y GitHub
+ 					Git y GitHub
 
-_________________________________________________________________________________________________
+********************************************************************************************************************************************************************
 
- 	-- Git --
+ 	.: ■ Git :.
 ■ COMANDOS GIT
 ■ 3 AREAS EN GIT
 ■ Commits (Comprometerse) = Comfirmar cambios
@@ -15,7 +15,7 @@ ________________________________________________________________________________
 ■ FUSIONAR RAMAS
 ■ CONFLICTOS AL FUSIONAR RAMAS
 ■ NOTES
- 	-- GitHub --
+ 	.: ■ GitHub :.
 ■ PROBAR CONECCION CON GITHUB
 ■ SIGNIFICADO DE LAS LETRAS U, M, A, D
 ■ COMANDOS PARA REPOSITORIOS REMOTOS
@@ -29,9 +29,9 @@ ________________________________________________________________________________
 ■ pull request a partir de una rama
 ■ COMANDOS GITHUB
 
-_________________________________________________________________________________________________
+********************************************************************************************************************************************************************
 
- 					     -- Git --
+ 					     .:	■ Git :.
 COMANDOS :
 → ls __________________________ Listar los Archivos y Carpetas en el directorio actual.
 → mkdir _______________________ (abreviatura de make directory(hacer directorio)) Se usa para crear nuevas carpetas o directorios desde la línea de comandos.
@@ -76,29 +76,29 @@ Esto significa que estás marcando los cambios que deseas incluir en tu próximo
 
  					■ 3 AREAS EN GIT
 
-► 3 AREAS Y ESTADOS EN LAS QUE PUEDE ESTAR UN ARCHIVO CUANDO CREO UN REPOSITORIO DE GIT
+♦ 3 AREAS Y ESTADOS EN LAS QUE PUEDE ESTAR UN ARCHIVO CUANDO CREO UN REPOSITORIO DE GIT
 Cada una de esas áreas van a representar un estado distinto del archivo en el repositorio.
 
-→ 1. Directorio de trabajo (Etapa Modificada(Modified)).
-→ 2. Área de preparación (Etapa Preparada(Staged)).
-→ 3. Repositorio (Etapa Confirmada(Committed)).
+♦ 1. Directorio de trabajo (Etapa Modificada(Modified)).
+♦ 2. Área de preparación (Etapa Preparada(Staged)).
+♦ 3. Repositorio (Etapa Confirmada(Committed)).
 
-→ 1. Directorio de trabajo (Working directory) :
+♦ 1. Directorio de trabajo (Working directory) :
 La carpeta del proyecto que contiene todos los archivos y el directorio oculto .git del repositorio.
 
-→ 2. Area de preparación (Staging area) : Conjunto de archivos y cambios que seran incluidos en el proximo commit.
+♦ 2. Area de preparación (Staging area) : Conjunto de archivos y cambios que seran incluidos en el proximo commit.
 
-→ 3. Repositorio(directorio .git) : Directorio que contiene los metadatos y las versiones del proyecto.
+♦ 3. Repositorio(directorio .git) : Directorio que contiene los metadatos y las versiones del proyecto.
 Es la parte del repositorio que se copia cuando clonas un repositorio a la computadora.
 
 ---
 
-► Etapa Modificada(Modified) : Si la version del archivo contiene cambios que no son parte del repositorio
+♦ Etapa Modificada(Modified) : Si la version del archivo contiene cambios que no son parte del repositorio
 y no se ha añadido del area de preparacion.
 
-► (Etapa Preparada(Staged) : Si la version del archivo contiene cambios que no son parte del repositorio pero fue añadida al area de preparacion.
+♦ (Etapa Preparada(Staged) : Si la version del archivo contiene cambios que no son parte del repositorio pero fue añadida al area de preparacion.
 
-► (Etapa Confirmada(Committed) : Si la version del archivo ya se encuentra en el directorio oculto .Git .
+♦ (Etapa Confirmada(Committed) : Si la version del archivo ya se encuentra en el directorio oculto .Git .
 
 Cuando abro el directorio que cree en git bash en vscode, creo un archivo.txt y le aparece una U al archivo
 es porque no estoy rastreando o llevando un registro de los cambios que se van hacer en el archivo.
@@ -110,7 +110,11 @@ En ese momento el archivo solo esta en el area de trabajo.
 
 Componente básico de la linea del tiempo de un proyecto de Git.
 
-Es como un registro o "foto" del estado de un proyecto en un momento especifico.
+Es como un registro o "foto" del DEFINICIONES GENERALES.txt
+        Git y GitHub.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+un proyecto en un momento especifico.
 
 Registran los cambios que se realizaron en los archivos en comparación con la versión anterior que se había registrado en el repositorio.
 
@@ -123,8 +127,8 @@ Git le asigna a cada commit un identificador unico llamado SHA(Secure Hash Algor
   • Quien hizo los cambios.
 
  	• AGREGAR UN COMMIT AL REPOSITORIO :
-git commit -m " mensaje "
 → -m = que voy a escribir un mensaje directamente en la linea de comandos.
+git commit -m " mensaje "
 
  	• VER EL HISTORIAL DE COMMITS
 → git log
@@ -307,7 +311,7 @@ Si intentas fusionar ►ramaB en ►ramaA o viceversa, Git no sabe cuál usar �
 
 ____________________________________________________________________________________________________________________________________________________________________
 
- 					     	-- GitHub --
+ 					     	.: ■ GitHub :.
 
 Es un servicio de Hosting que nos permite almacenar proyectos de desarrollo de software y control de versiones usando Git.
 
@@ -566,8 +570,10 @@ Trabajar con ramas en Git te da seguridad, orden, colaboración y control sobre 
 → git remote add origin git@github.com:Brayan-SH/proyecto-javascript.git
  → git push -u origin main
 
-♦ …o enviar un repositorio existente desde la línea de comandos
+■ …or push an existing repository from the command line/
+■ …o enviar un repositorio existente desde la línea de comandos
 → git remoto agregar origen git@github.com:Brayan-SH/proyecto-javascript.git
- → git rama -M principal
+→ git rama -M principal
 → git push -u origen principal
 
+********************************************************************************************************************************************************************

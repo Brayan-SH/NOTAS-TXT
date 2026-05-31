@@ -1,4 +1,4 @@
-	■ Python
+					■ Python
 ♦ METODOS DE LAS CADENAS DE CARACTERES:
 → Capitalize
 ♦ Permiten encontrar caracteres o cadenas dentro de otra:
@@ -33,7 +33,7 @@
 6. Recorrer con un bucle:
 7. Verificar si un valor está:
 🧠 Otras funciones útiles:
-♦ Método
+♦ Métodos
 → lista.sort()
 → sorted( lista )
 → lista.reverse()
@@ -70,7 +70,7 @@
 → open("archivo.txt", "a") → agregar.
 → Usa with open(...) as f: → más seguro y limpio.
 
---------------------------------------------------------------------------------------------------------
+________________________________________________________________________________________________________________________________________________________
 
  			  		■ Python
 
@@ -79,7 +79,7 @@ IDLE: Entorno integrado de programación que se instala automáticamente cuando 
 ¿Qué puede hacer IDLE?
 Escribir, Editar, Ejecutar.
 
---------------------------------------------------------------------------------------------------------
+________________________________________________________________________________________________________________________________________________________
 
 ♦ METODOS DE LAS CADENAS DE CARACTERES:
 
@@ -125,7 +125,7 @@ Retorna una copia en mayúsculas de la cadena de caracteres.
 → **=
 → %=
 
---------------------------------------------------------------------------------------------------------
+________________________________________________________________________________________________________________________________________________________
 
 						■ LISTAS:
 ['a', 'b', 'c'...]
@@ -173,7 +173,7 @@ for item in mi_lista:
 → lista.index(x)            |   Devuelve el índice de x.
 → lista.extend(otra_lista)  |   Extender la lista agregándole los elementos de otra lista.
 
---------------------------------------------------------------------------------------------------------
+________________________________________________________________________________________________________________________________________________________
 
 				■ TUPLA
 
@@ -187,7 +187,7 @@ puede contener valores de distintos tipos de datos.
 Cada posición de la tupla se identifica con un entero denominado 'indice'.
 Es inmutable. No puede ser modificada.
 
---------------------------------------------------------------------------------------------------------
+________________________________________________________________________________________________________________________________________________________
 
 				■ Archivos
 
@@ -264,3 +264,11 @@ with open("numeros.txt", "w") as archivo:
 → open("archivo.txt", "w") → sobrescribir.
 → open("archivo.txt", "a") → agregar.
 → Usa with open(...) as f: → más seguro y limpio.
+
+______________________________________________ ■ PRINCIPIOS PYTHON ______________________________________________
+
+SRP
+OCP
+CSP
+ISP
+DIP

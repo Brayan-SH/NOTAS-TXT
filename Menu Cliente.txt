@@ -1,0 +1,24 @@
+Cliente:
+catalogo
+favoritos
+comprar autos
+citas
+contactos
+calendario
+predios
+mensajes
+notificaciones
+
+VENDER:
+Catalogo
+Agregar Vehiculo
+Actualizar Vehiculo
+Gestionar Consultas
+Estadísticas
+Confirmar Ventas/Apartados
+Calendario
+Mensajes
+Notificaciones
+Configuración
+
+aplicación Fell: emitir facturas

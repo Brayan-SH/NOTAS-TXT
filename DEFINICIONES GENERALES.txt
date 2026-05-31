@@ -1,4 +1,4 @@
-						■ DEFINICIONES GENERALES:
+						DEFINICIONES GENERALES:
 
 PARAMETROS VS ARGUMENTOS
 LOS PARAMETROS : son los nombres que aparecen en la definición de una función. Por su parte, 
@@ -20,7 +20,7 @@ ______________________________________________ ■ NO MEZCLAR TECNOLOGIAS ______
 
 → Python se ejecuta en el servidor.
 → JavaScript se ejecuta en el navegador.
-• No puedes usar import de Python en el navegador.
+→ No puedes usar import de Python en el navegador.
 
 ______________________________________________ ■ librerías y entornos virtuales ______________________________________________
 

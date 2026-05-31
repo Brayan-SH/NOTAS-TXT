@@ -1,0 +1,36 @@
+app.js
+
+🔧 ¿Qué hace ■ fetch ?
+• 	Envía una solicitud (GET, POST, PUT, DELETE, etc.) a una URL
+• 	Recibe una respuesta (generalmente en formato JSON)
+• 	Permite trabajar con APIs de forma asíncrona usando 
+
+Diferencias con otros métodos HTTP:
+
+Método	Propósito		Datos en URL		Idempotente
+GET	Obtener datos		Sí (query params)	Sí
+POST	Crear datos		No (en body)		No
+PUT	Actualizar datos	No (en body)		Sí
+DELETE	Eliminar datos		Sí (params)		Sí
+
+¿Qué es POST?
+POST es un método HTTP usado para crear nuevos recursos en el servidor.
+
+Características del método POST:
+Propósito: Crear nuevos datos
+Seguridad: Los datos van en el body (no en la URL)
+Idempotencia: NO es idempotente (cada llamada crea un nuevo recurso)
+Límite de datos: Sin límite práctico de tamaño
+
+____________________________________________________________________________________________________________________________________________________
+
+	■ JSON:
+Es un formato de texto que representa objetos y arreglos. Muy usado en APIs, bases de datos y comunicación entre frontend y backend.
+
+____________________________________________________________________________________________________________________________________________________
+
+	■ stringify:
+Es una función que se usa principalmente en JavaScript para convertir objetos o arreglos en una cadena de texto JSON. Su forma completa es JSON.stringify().
+¿Qué hace JSON.stringify(nuevoVehiculo)?
+Convierte el objeto JavaScript a una cadena JSON que puede viajar por HTTP.
+

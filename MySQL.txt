@@ -1,0 +1,12 @@
+								MySQL
+								
+♦ Sección: "Code Generation"
+
+• Opciones sobre cómo se genera el código SQL:
+
+• Drop objects before each CREATE object: elimina cada objeto antes de recrearlo, evitando errores por duplicados.
+
+************************************************** SOLUCIONES **************************************************
+
+♦ Solucion a db inventario
+DROP SCHEMA IF EXISTS ...

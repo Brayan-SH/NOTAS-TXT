@@ -1,0 +1,151 @@
+						SQL SERVER
+
+→ Driver={SQL Server};Server=MI_SERVIDOR;Database=MI_BASE;UID=usuario;PWD=contraseña;
+
+• O si usaste “Add Current User” al instalar SQL Server:
+→ Driver={SQL Server};Server=MI_SERVIDOR;Database=MI_BASE;Trusted_Connection=yes;
+
+_____________________________________________________________________________________________________________________________________
+
+• El método abreviado de teclado para eliminar comentarios del texto es CTRL + K, CTRL + U.
+
+______________________________________________ ■ Abrir el registro de errores en SSMS ______________________________________________
+
+	
+Conéctese a la instancia de SQL Server.
+
+Expanda Administración de registros de > SQL Server.
+
+Haga clic con el botón derecho en el registro de errores actual y seleccione Ver registro de SQL Server:
+
+______________________________________________ ■ CONSULTAS TEMPORALES ______________________________________________ 
+
+--select *from clientes
+--select *from transmision
+--select *from vendedores
+select *from vehiculos
+--select *from foto_vehiculos
+--select *from video_vehiculo
+
+-- Segundas Tablas
+-- select *from vehiculo
+-- select *from transmision_vehiculo
+-- select *from foto_vehiculo
+
+______________________________________________ ■ Table Facturas ______________________________________________
+
+use [Auto Predio]
+go
+
+CREATE TABLE facturas (
+    numero_factura INT IDENTITY(1000,1) PRIMARY KEY, -- empieza en 1000 y aumenta de 1 en 1
+    fecha_emision DATETIME DEFAULT GETDATE(),
+    forma_pago VARCHAR(30),
+    total DECIMAL(15,2),
+    estado VARCHAR(20), -- Ej: Pagada, Pendiente, Anulada
+    id_cliente INT NOT NULL,
+    id_vehiculo INT NULL, -- si aplica
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
+    FOREIGN KEY (id_vehiculo) REFERENCES vehiculos(id_vehiculo)
+);
+
+_________________________________________________________________________________________________________________
+
+USE [Auto Predio];
+GO
+
+BEGIN TRY
+    -- Iniciar transacción para poder hacer rollback si hay error
+    BEGIN TRANSACTION;
+    
+    PRINT 'Iniciando inserción de vehículo Toyota Corolla...';
+    
+    -- VEHÍCULO
+    INSERT INTO vehiculos (vin, marca, modelo, anio_fabricacion, color, kilometraje, precio, condicion, fecha_registro, numero_chasis, placa, tipo_vehiculo, cc_motor, tipo_combustible, transmision, numero_puertas, traccion, historial_accidentes, mantenimiento, garantia, disponibilidad_financiamiento, predio_o_vendedor, contacto, id_vendedor)
+    VALUES ('TEST123456789VIN', 'Toyota', 'Corolla', 2024, 'Blanco', '5000', '350000', 'Nuevo', GETDATE(), 'TEST123456789CHA', 'TST-2024', 'Sedan', '1.8L', 'Gasolina', 'CVT', 4, 'FWD', 'Sin accidentes', 'Toyota Service', 'Vigente 3 años', 'Disponible', 'Toyota Center', 'test@toyota.mx', (SELECT v.id_vendedor FROM vendedores v WHERE v.nombre_comercial = 'Premium Motors CDMX'));
+    
+    PRINT 'Vehículo insertado exitosamente. Insertando fotos...';
+    
+    -- FOTOS (usar fotos_vehiculos)
+    INSERT INTO fotos_vehiculos (vin, ruta_foto, descripcion, id_vehiculo)
+    SELECT 'TEST123456789VIN', '/fotos/toyota_corolla/frontal.jpg', 'Vista frontal Toyota Corolla', v.id_vehiculo FROM vehiculos v WHERE v.vin = 'TEST123456789VIN';
+    
+    PRINT 'Fotos insertadas exitosamente. Insertando videos...';
+    
+    -- VIDEOS (usar videos_vehiculos)
+    INSERT INTO videos_vehiculos (vin, ruta_video, descripcion, id_vehiculo)
+    SELECT 'TEST123456789VIN', '/videos/toyota_corolla/tour.mp4', 'Tour Toyota Corolla 2024', v.id_vehiculo FROM vehiculos v WHERE v.vin = 'TEST123456789VIN';
+    
+    PRINT 'Videos insertados exitosamente.';
+    
+    -- Confirmar la transacción
+    COMMIT TRANSACTION;
+    
+    PRINT '=== ÉXITO: Toyota Corolla guardado completamente ===';
+    
+    -- Mostrar el vehículo insertado
+    SELECT 
+        v.vin, 
+        v.marca + ' ' + v.modelo as Vehiculo,
+        v.precio,
+        ve.nombre_comercial as Vendedor,
+        (SELECT COUNT(*) FROM fotos_vehiculos f WHERE f.vin = v.vin) as Total_Fotos,
+        (SELECT COUNT(*) FROM videos_vehiculos vi WHERE vi.vin = v.vin) as Total_Videos
+    FROM vehiculos v
+    LEFT JOIN vendedores ve ON v.id_vendedor = ve.id_vendedor
+    WHERE v.vin = 'TEST123456789VIN';
+
+END TRY
+BEGIN CATCH
+    -- Si hay error, deshacer todos los cambios
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+    
+    -- Mostrar información detallada del error
+    PRINT '=== ERROR DETECTADO ===';
+    PRINT 'Número de Error: ' + CAST(ERROR_NUMBER() AS VARCHAR(10));
+    PRINT 'Severidad: ' + CAST(ERROR_SEVERITY() AS VARCHAR(10));
+    PRINT 'Estado: ' + CAST(ERROR_STATE() AS VARCHAR(10));
+    PRINT 'Procedimiento: ' + ISNULL(ERROR_PROCEDURE(), 'N/A');
+    PRINT 'Línea: ' + CAST(ERROR_LINE() AS VARCHAR(10));
+    PRINT 'Mensaje: ' + ERROR_MESSAGE();
+    PRINT '========================';
+    
+    -- También verificar qué vendedores existen
+    PRINT 'Vendedores disponibles:';
+    SELECT id_vendedor, nombre_comercial FROM vendedores ORDER BY id_vendedor;
+    
+END CATCH;
+
+______________________________________________ ■ Revisar llaves foráneas de una tabla ______________________________________________
+
+SELECT 
+    fk.name AS Nombre_Clave_Foranea,
+    tp.name AS Tabla_Principal,
+    cp.name AS Columna_Principal,
+    tr.name AS Tabla_Referenciada,
+    cr.name AS Columna_Referenciada
+FROM sys.foreign_keys fk
+INNER JOIN sys.foreign_key_columns fkc ON fk.object_id = fkc.constraint_object_id
+INNER JOIN sys.tables tp ON fk.parent_object_id = tp.object_id
+INNER JOIN sys.columns cp ON fkc.parent_column_id = cp.column_id AND cp.object_id = tp.object_id
+INNER JOIN sys.tables tr ON fk.referenced_object_id = tr.object_id
+INNER JOIN sys.columns cr ON fkc.referenced_column_id = cr.column_id AND cr.object_id = tr.object_id
+WHERE tp.name = 'vendedores';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

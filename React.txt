@@ -1,4 +1,4 @@
-						■ React
+						React
 
 ♦ CONCEPTOS BASICOS EN React.
 ♦ DESCARGAR E INSTATALAR Node.js
@@ -29,7 +29,7 @@ Conjunto de implementaciones o subprogramas que podemos usar en nuestro código.
 • Parte de la interfaz de usuario que es independiente y reusable.
 • Anteriormente usábamos componentes de clase para poder trabajar con (estados) de nuestros componentes.
 
-	♦ COMPONENTE FUNCIONAL : 
+	¬ COMPONENTE FUNCIONAL : 
 Función de JavaScript/ES6 que retorna un elemento de React(JSX).
 CARACTERISTICAS : 
 • Debe retornar un elemento de React(JSX).
@@ -42,7 +42,7 @@ function Saludo (props) {
    return <h1>¡Hola , {props.nombre}!</h1>;
 }
 
-	♦ COMPONENTES DE CLASE : 
+	¬ COMPONENTES DE CLASE : 
 Clase ES6(JavaScript moderno) que retorna un elemento JSX.
 CARACTERISTICAS :
 • Debe extender React.Component para extender todas las propiedades(FUNCIONES) de un componente de React.
@@ -117,7 +117,7 @@ Permite ejecutar JavaScript fuera de un browser(navegador).
 	• En JSX, los elementos HTML se representan con etiquetas en letras minúsculas.
 	• Se pueden agregar atributos a los elementos en JSX para especificar ciertas características.
 	• Pero... algunos se escriben de forma distinta si los comparamos con HTML.
-	• class es una palabra reservada en JS que podemos usar para crear una clase. Por eso necesitamos escribir este atributo de 	forma distinta en JSX.
+	• class es una palabra reservada en JS que podemos usar para crear una clase. Por eso necesitamos escribir este atributo de forma distinta en JSX.
 
 ► EJEMPLO :
 	• en HTML las clases se escriben <h1 class="nombre-clase">Title</h1>

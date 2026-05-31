@@ -4,12 +4,12 @@ MAYUS + ALT + A _________________ /* Agregar comentario */.
 CTRL + D ________________________ Seleccionar una palabra completa.
 MAYUS + ALT + FLECHITA___________ Duplicar línea.
 ALT + CLICK_IZQUIERDO ___________ Alternar el cursor en varias líneas.
-CTRL + ALT + FLECHA(↑/↓) ________ Poner el cursor en varias líneas.
+CTRL + ALT + MAYUS + FLECHA(↑/↓)_ Poner el cursor en varias líneas.
 ALT + FLECHA (↑/↓) ______________ Subir o baja la linea.
 SHIFT + ALT + F _________________ Refactorizar código(Tabulación o Sangrado).
 CTRL + SHIFT + L ________________ Seleccionar todas las repeticiones.
 CTRL + ALT FLECHA(←/→) __________ Dividir la ventana en la que estamos trabajando.
-CTRL + SUPR _____________________ Elimina hacia ADELANTE.
+CTRL + SUPR _____________________ Elimina hacia ADELANTE. 
 CTRL + DELETE ___________________ Elimina hacia ATRAS.
 ALT + FLECHA(←/→) _______________ Para cambiar entre pestañas vscode.
 CTRL + ESPACIO __________________ Ver opciones.
@@ -35,18 +35,21 @@ Alt + 254 _______________________ ■
 Alt + 4 _________________________ ♦
 Alt + 16 ________________________ ►
 Alt + 26 ________________________ →
+AltGr + una tecla abajo de Esc __ ¬
 \U0001F449 ______________________ 👉
+😱, ⭐, 🎯, 🧩, 🔍, 🚚, ⌨️, 📞, ⚡, ❤️, ⚡, ✅, ⚠️, 🔥, 🤝, 🧾, 🛒, 🧱, 🔗, 📦, 🔧
 \U0001F4B0 ______________________ 💰
-- Unicode: U+274C
-- HTML: &#10060;
-- Python: "\u274C"_______________ ❌
-- Unicode: U+2705
-- HTML: &#9989;
-- Python: "\u2705" ______________ ✅
-Ctrl + Shift + Enter ____________ Escribir nueva linea de código ↑arriba.
+Unicode: U+274C
+HTML: &#10060;
+Python: "\u274C" ________________ ❌
+Unicode: U+2705
+HTML: &#9989;
+Python: "\u2705" ________________ ✅
+_________________________________ ★
+Ctrl + Shift + Enter ____________ Escribir nueva linea de código ↑(arriba).
 Ctrl + Shift + | ________________ Saltar entre corchetes{}.
 F12 _____________________________ Para abrir la consola.
-Ctrl + L ________________________ Despejar la consola
+Ctrl + L ________________________ Despejar la consola del navegador.
 F8 ______________________________ Siguiente problema.
 Myus + F8 _______________________ Anterior problema.
 Alt + F3 ________________________ Cambio siguiente.
@@ -54,6 +57,7 @@ Shift + Alt + F3 ________________ cambio anterior.
 CTRL + G ________________________ Ir a la linea o columna.
 CTRL + ALT + I __________________ Chat de Copilot.
 CTRL + E ________________________ Abiertos Recientemente.
+INICIO + MAYUS + FLECHA(←/→)_____ Mover una ventana hacia el monitor o la laptop.
 
 CUENTA SMARTER
 USUARIO: BrayaSalesss

@@ -1,0 +1,40 @@
+app.py
+
+______________________________________________ ■ jsonify ______________________________________________
+¿Qué hace jsonify?
+🔧 Función principal:
+jsonify convierte datos Python en respuestas HTTP con formato JSON válido.
+
+______________________________________________ ■ .JSON  ______________________________________________
+
+El formato .json (JavaScript Object Notation) es un tipo de archivo que se utiliza para almacenar y transportar datos estructurados de forma ligera y legible tanto para humanos como para máquinas. Aquí te explico qué hace y cómo se usa:
+📦 ¿Qué hace un archivo .json?
+Un archivo .json guarda información en forma de pares clave-valor, similar a un diccionario en Python o un objeto en JavaScript. Su propósito principal es:
+- Intercambiar datos entre sistemas (por ejemplo, entre frontend y backend)
+- Guardar configuraciones (como en VS Code, ESLint, etc.)
+- Persistir información estructurada (como listas de productos, usuarios, inventarios)
+🧠 ¿Cómo se ve un .json?
+{
+  "nombre": "Brayan",
+  "ocupacion": "Almacenista",
+  "habilidades": ["SQL", "Python", "Flask"],
+  "activo": true
+}
+
+🔧 ¿Dónde se usa?
+- APIs REST: Las respuestas suelen venir en formato JSON.
+- Bases de datos NoSQL: MongoDB usa documentos JSON.
+- Configuraciones: Archivos como package.json, tsconfig.json, settings.json.
+- Frontend y backend: Para enviar y recibir datos entre cliente y servidor.
+✅ Ventajas
+- Ligero y fácil de leer
+- Compatible con muchos lenguajes (Python, JavaScript, Java, etc.)
+- Ideal para estructuras anidadas y listas
+
+______________________________________________ ■  ______________________________________________
+
+🔐 ¿Qué es CORS?
+CORS = Cross-Origin Resource Sharing (Compartir Recursos de Origen Cruzado)
+
+Es un mecanismo de seguridad del navegador que controla qué sitios web pueden acceder a tu API.
+
